@@ -1,0 +1,21 @@
+{
+  "name": "mivasnippets",
+  "displayName": "Miva Snippets",
+  "description": "Miva Snippets",
+  "publisher": "Mike Abramyans",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.38.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "miva-template",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

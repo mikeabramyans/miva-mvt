@@ -1,0 +1,722 @@
+{
+	"mvt:read_basket": {
+		"prefix": "mvt:read_basket",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Read_Basket( '${1:basket_field_code}', ${2:g.variable} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_basket": {
+		"prefix": "mvt:write_basket",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Basket( '${1:basket_field_code}', '${2:value}' )\" />\n",
+		"description": "Debug",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:read_category_code": {
+		"prefix": "mvt:read_category_code",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Read_Category_Code( ${1:'category_code'}, '${2:custom_field_code}', ${4:l.settings:${3:category}:customfield_values:customfields:$2} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:read_category_id": {
+		"prefix": "mvt:read_category_id",
+		"body": "<mvt:item name=\"customfields\" param=\"Read_Category_ID( ${1:1}, '${2:custom_field_code}', ${4:l.settings:${3:category}:customfield_values:customfields:$2} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:read_customer_id": {
+		"prefix": "mvt:read_customer_id",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Read_Customer_ID( ${1:666}, '${2:custom_field_code}', ${3:l.settings:customfields} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:read_customer_login": {
+		"prefix": "mvt:read_customer_login",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Read_Customer_Login( ${1:'test@test.com'}, '${2:custom_field_code}', ${3:l.settings:customfields} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:read_order": {
+		"prefix": "mvt:read_order",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Read_Order( ${1:666}, '${2:custom_field_code}', ${3:l.settings:customfields} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:read_product_code": {
+		"prefix": "mvt:read_product_code",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Read_Product_Code( ${1:'product_code'}, '${2:custom_field_code}', ${4:l.settings:${3:product}:customfield_values:customfields:$2} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:read_product_id": {
+		"prefix": "mvt:read_product_id",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Read_Product_ID( ${1:1}, '${2:custom_field_code}', ${4:l.settings:${3:product}:customfield_values:customfields:$2} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_category_code": {
+		"prefix": "mvt:write_category_code",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Category_Code( ${1:'category_code'}, '${2:custom_field_code}', ${3:'value'} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_category_id": {
+		"prefix": "mvt:write_category_id",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Category_ID( ${1:1}, '${2:custom_field_code}', ${3:'value'} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_customer_id": {
+		"prefix": "mvt:write_customer_id",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Customer_ID( ${1:666}, '${2:custom_field_code}', ${3:'value'} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_customer_login": {
+		"prefix": "mvt:write_customer_login",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Customer_Login( ${1:'test@test.com'}, '${2:custom_field_code}', ${3:'value'} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_order": {
+		"prefix": "mvt:write_order",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Order( ${1:g.order:id}, '${2:custom_field_code}', ${3:'value'} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_product_code": {
+		"prefix": "mvt:write_product_code",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Product_Code( ${1:'product_code'}, '${2:custom_field_code}', ${3:'value'} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:write_product_id": {
+		"prefix": "mvt:write_product_id",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Write_Product_ID( ${1:g.product:id}, '${2:custom_field_code}', ${3:'value'} )\" />\n",
+		"description": "Customfield",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:cf-debug": {
+		"prefix": "mvt:cf-debug",
+		"body": "\n<mvt:item name=\"customfields\" param=\"Debug()\" />\n",
+		"description": "Debug",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:debug": {
+		"prefix": "mvt:debug",
+		"body": "\r\n<mvt:assign name=\"g.mvt_debug\" value=\"glosub( miva_array_serialize( ${1:variable} ), ',', asciichar( 10 ) )\" />\r\n${2:<!--\r\n@@${1/(l\\.(settings:?)?|g\\.|s\\.)([a-zA-Z0-9:_\\.\\[\\]]*)/$3/g}\r\n===${1/./=/g}}\r\n&mvt:global:mvt_debug;\r\n${3:-->}\r\n",
+		"description": "Debug",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:testuser": {
+		"prefix": "mvt:testuser",
+		"body": "\n<mvt:comment> Start Testing Conditional </mvt:comment>\n<mvt:if expr=\"g.customer:login EQ '${1:test}'\">\n\n\n\n\n${2}\n\n\n\n\n${3:<mvt:else>}\n${0}\n</mvt:if>\n<mvt:comment> / end Testing Conditional </mvt:comment>\n",
+		"description": "Debug",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:testvar": {
+		"prefix": "mvt:testvar",
+		"body": "\n<mvt:comment> Start Testing Conditional </mvt:comment>\n<mvt:if expr=\"${1:g.test EQ 1}\">\n\n\n\n\n${2}\n\n\n\n\n${3:<mvt:else>}\n${0}\n</mvt:if>\n<mvt:comment> / end Testing Conditional </mvt:comment>\n",
+		"description": "Debug",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:var_dump": {
+		"prefix": "mvt:var_dump",
+		"body": "\r\n<mvt:assign name=\"g.var\" value=\"miva_array_serialize(${1:array})\" />\r\n<!-- @@ &mvt:global:var; -->\r\n",
+		"description": "Debug",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:concat": {
+		"prefix": "mvt:concat",
+		"body": "\n<mvt:assign name=\"${1:g.variable}\" value=\"${1:g.variable} ${2:$} ${3:l.variable}\" />\n",
+		"description": "Other",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:fileread": {
+		"prefix": "mvt:fileread",
+		"body": "\n<mvt:assign name=\"g.file_read\" value=\"file_read('/credit.csv','data', g.data)\" />\n\n  <mvt:if expr=\" g.file_read NE -1 \">\n    The file was read!\n  <mvt:else>\n    There was an error reading the file\n  </mvt:if>\n \n  <mvt:assign name=\"g.counter\" value=\"1\" />\n  <mvt:assign name=\"l.settings:line\" value=\"gettoken( g.data, asciichar(10), g.counter )\" />\n\n  <mvt:while expr=\"NOT ISNULL l.settings:line\">\n \n      <mvt:if expr=\"'bheyde' CIN l.settings:line\">\n\n      <mvt:assign name=\"l.settings:credit:login\"  value=\"gettoken( l.settings:line, asciichar(44), 1 ) \" />\n      <mvt:assign name=\"l.settings:credit:name\"   value=\"gettoken( l.settings:line, asciichar(44), 2 ) \" />\n      <mvt:assign name=\"l.settings:credit:amount\" value=\"gettoken( l.settings:line, asciichar(44), 3 ) \" />\n      \n      Login:  &mvt:credit:login;<br>\n      Name:   &mvt:credit:name;<br>\n      amount: &mvt:credit:amount;<br>\n  \n \n    </mvt:if>\n \n     \n      <mvt:assign name=\"g.counter\" value=\"g.counter + 1\" />\n      <mvt:assign name=\"l.settings:line\" value=\"gettoken( g.data, asciichar(10), g.counter )\" />\n \n               \n  </mvt:while>\n",
+		"description": "Other",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:filewrite": {
+		"prefix": "mvt:filewrite",
+		"body": "\n<mvt:assign name=\"g.filename\" \tvalue=\"'Export.csv'\" />\n<mvt:assign name=\"g.filepath\" \tvalue=\"'/test/'\" />\n<mvt:assign name=\"g.newline\" \tvalue=\"asciichar(10)\" />\n\n<mvt:assign name=\"g.headerrow\" \tvalue=\"'Product_Code,Product_Name,Product_Price' $ g.new_line\" />\n\n<mvt:assign name=\"g.file_exists\" value=\"sexists(g.filepath $ g.filename)\" />\n\n<mvt:if expr=\"g.file_exists EQ 1\">\n\n\t<mvt:assign name=\"g.file_deleted\" value=\"sdelete(g.filepath $ g.filename)\" />\n\n\t<mvt:if expr=\"g.file_deleted EQ 1\">\n\t\t<mvt:assign name=\"g.file_created\" value=\"file_create(g.filepath $ g.filename,'script', g.headerrow)\" />\n\t</mvt:if>\n\n<mvt:else>\n\n\t<mvt:assign name=\"g.file_created\" value=\"file_create(g.filepath $ g.filename,'script', g.headerrow)\" />\n\n</mvt:if>\n\n\n<mvt:if expr=\"g.file_deleted EQ 1\">\n\tThe File Was Deleted <br>\n</mvt:if>\n\n<mvt:if expr=\"g.file_created NE -1\">\n\tThe File Was Created <br>\n<mvt:else>\n\tThere was an error <br>\n</mvt:if>\n",
+		"description": "Other",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:gettoken": {
+		"prefix": "mvt:gettoken",
+		"body": "\n<mvt:assign name=\"${1:g.first}\" value=\"gettoken(${2:g.list}, ${3:','} , ${4:1})\" />\n",
+		"description": "Other",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:glosub": {
+		"prefix": "mvt:glosub",
+		"body": "\n<mvt:assign name=\"g.new_string\" value=\"glosub(${1:g.string}, ${2:'Miva Merchant'} , ${3:'Miva'})\" />\n",
+		"description": "Other",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:assign": {
+		"prefix": "mvt:assign",
+		"body": "\n<mvt:assign name=\"${1:g.variable}\" value=\"${2:l.value}\" />\n",
+		"description": "Tag - Assign",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:call": {
+		"prefix": "mvt:call",
+		"body": "\n<mvt:call action=\"$1\" method=\"$2\">\n\t${3:<mvt:eval expr=\"s.callvalue\" />}\n</mvt:call>\n<!-- @@ &mvt:global:MvCALL_Error; -->\n",
+		"description": "Tag - Call",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:callcontinue": {
+		"prefix": "mvt:callcontinue",
+		"body": "\n<mvt:callcontinue />\n",
+		"description": "Tag - CallContinue",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:callstop": {
+		"prefix": "mvt:callstop",
+		"body": "\n<mvt:callstop />\n",
+		"description": "Tag - CallStop",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:capture": {
+		"prefix": "mvt:capture",
+		"body": "\n<mvt:capture variable=\"${1}\">\n\t${0}\n</mvt:capture>\n",
+		"description": "Tag - Capture",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:comment": {
+		"prefix": "mvt:comment",
+		"body": "\r\n<mvt:comment>${1}</mvt:comment>\r\n",
+		"description": "Tag - Comment",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:do": {
+		"prefix": "mvt:do",
+		"body": "\n<mvt:do file=\"$4\" ${2:name=\"${3:l.success}\"} value=\"$1\" />\n",
+		"description": "Tag - Do",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:else": {
+		"prefix": "mvt:else",
+		"body": "\n<mvt:if expr=\"${1}\">\n\t${2}\n<mvt:else>\n\t${0}\n</mvt:if>\n",
+		"description": "Tag - Else",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:elseif": {
+		"prefix": "mvt:elseif",
+		"body": "\n<mvt:if expr=\"${1}\">\n\t${2}\n<mvt:elseif expr=\"${3}\">\n\t${0}\n</mvt:if>\n",
+		"description": "Tag - ElseIf",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:eval": {
+		"prefix": "mvt:eval",
+		"body": "\n<mvt:eval expr=\"${1:g.value}\" />\n",
+		"description": "Tag - Eval",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:exit": {
+		"prefix": "mvt:exit",
+		"body": "\n<mvt:exit />\n",
+		"description": "Tag - Exit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:foreach": {
+		"prefix": "mvt:foreach",
+		"body": "\n<mvt:foreach iterator=\"${1}\" array=\"${2}\">\n\t${0}\n</mvt:foreach>\n",
+		"description": "Tag - Foreach",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:foreachcontinue": {
+		"prefix": "mvt:foreachcontinue",
+		"body": "\n<mvt:foreachcontinue />\n",
+		"description": "Tag - ForeachContinue",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:foreachstop": {
+		"prefix": "mvt:foreachstop",
+		"body": "\n<mvt:foreachstop />\n",
+		"description": "Tag - ForeachStop",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:if": {
+		"prefix": "mvt:if",
+		"body": "\n<mvt:if expr=\"${1}\">\n\t${0}\n</mvt:if>\n",
+		"description": "Tag - If",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:item": {
+		"prefix": "mvt:item",
+		"body": "\r\n<mvt:item name=\"${1}\" ${2:param=\"${3}\"} />\r\n",
+		"description": "Tag - Item",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:miva": {
+		"prefix": "mvt:miva",
+		"body": "\n<mvt:miva output=\"${1:on}\" compresswhitespace=\"${2:on}\" />\n",
+		"description": "Tag - Miva",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:while": {
+		"prefix": "mvt:while",
+		"body": "\n<mvt:while expr=\"${1}\">\n\t${0}\n</mvt:while>\n",
+		"description": "Tag - While",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:whilecontinue": {
+		"prefix": "mvt:whilecontinue",
+		"body": "\n<mvt:whilecontinue />\n",
+		"description": "Tag - WhileContinue",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"mvt:whilestop": {
+		"prefix": "mvt:whilestop",
+		"body": "\n<mvt:whilestop />\n",
+		"description": "Tag - WhileStop",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-agroup-c": {
+		"prefix": "tk-agroup-c",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"agroup-c|${1:acatcount}|${0:g.Category_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-agroup-cats": {
+		"prefix": "tk-agroup-cats",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"agroup-cats|${1:acatcount}|${0:l.settings:agroup:name}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-agroup-p": {
+		"prefix": "tk-agroup-p",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"agroup-p|${1:aprdcount}|${0:g.Product_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-agroup": {
+		"prefix": "tk-agroup",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"agroup|${0:acount}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-agrpinsert": {
+		"prefix": "tk-agrpinsert",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"agrpinsert|${1:avail}|${0:Wholesale}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-alsobought": {
+		"prefix": "tk-alsobought",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"alsobought|${0:250}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-attr": {
+		"prefix": "tk-attr",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"attr|${1:acount}|${0:l.all_settings:product:id}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-basket": {
+		"prefix": "tk-basket",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"basket|${0:itemcount}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-bestseller": {
+		"prefix": "tk-bestseller",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"bestseller|${1:pcount}|${2:g.Category_Code}|${3:5}|${0:1}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-breadcrumb": {
+		"prefix": "tk-breadcrumb",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"breadcrumb|${1:b_count}|${0:g.Category_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-callurl": {
+		"prefix": "tk-callurl",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"callurl|${1:sample}|${2:http://www.mydomain.com/subscribe.php}|${3:POST}|${4:sublist},${5:ship_lname},${0:ship_email}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-categorymeta": {
+		"prefix": "tk-categorymeta",
+		"body": "\n\t<mvt:item name=\"toolkit\" param=\"categorymeta|${1:CODE}|${0:l.all_settings:category:code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-catimage": {
+		"prefix": "tk-catimage",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"catimage|${1:bigimage}|${0:l.all_settings:parent_category:code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-catpages": {
+		"prefix": "tk-catpages",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"catpages|${0:l.all_settings:category:id}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-cattreeimage": {
+		"prefix": "tk-cattreeimage",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"cattreeimage|${1:smallimage}|${0:l.all_settings:parent_category:code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-childof": {
+		"prefix": "tk-childof",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"childof|${1:parentfound}|${0:g.Category_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-clearall": {
+		"prefix": "tk-clearall",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"clearall\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-concat": {
+		"prefix": "tk-concat",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"concat|${1:newstring}|${2:var1}|${0:var2}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-counter": {
+		"prefix": "tk-counter",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"counter|${1:current_nbr}|${0:g.offset}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-currencyformat": {
+		"prefix": "tk-currencyformat",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"currencyformat|${1:formatted_savings}|${0:difference}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-custinsert": {
+		"prefix": "tk-custinsert",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"custinsert|${1:taxid}|${0:g.mytax}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-custom": {
+		"prefix": "tk-custom",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"custom|${1:studio}|${2:l.all_settings:item:product_id}|${0:company}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-customer": {
+		"prefix": "tk-customer",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"customer|${1:member}|${0:membership}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-cxp": {
+		"prefix": "tk-cxp",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"cxp|${1:pcount}|${0:l.all_settings:sub_category:id}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-footer": {
+		"prefix": "tk-footer",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"footer|${0:catfoot}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-gettoken": {
+		"prefix": "tk-gettoken",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"gettoken|${1:l.all_settings:product:descrip},${2:#},${0:2}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-header": {
+		"prefix": "tk-header",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"header|${0:cathead}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-import": {
+		"prefix": "tk-import",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"import|${1:megalist}|${2:cust.dat}|${0:crlf}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-last": {
+		"prefix": "tk-last",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"basket|${0:itemcount}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-lasturl": {
+		"prefix": "tk-lasturl",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"lasturl|${1:url}|${0:http://www.yourdomain.com/mm5/merchant.mvc}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-logbackin": {
+		"prefix": "tk-logbackin",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"logbackin|${0:10}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-math_add": {
+		"prefix": "tk-math_add",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"math_add|${1:sum}|${2:l.all_settings:product:price}|${0:l.all_settings:product:cost}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-math_divide": {
+		"prefix": "tk-math_divide",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"math_divide|${1:result}|${2:l.all_settings:product:cost}|${0:l.all_settings:product:price}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-math_multiply": {
+		"prefix": "tk-math_multiply",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"math_multiply|${1:times}|${2:l.all_settings:product:cost}|${0:l.all_settings:product:price}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-math_subtract": {
+		"prefix": "tk-math_subtract",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"math_subtract|${1:difference}|${2:l.all_settings:product:cost}|${0:l.all_settings:product:price}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-mvassign": {
+		"prefix": "tk-mvassign",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"mvassign|${1:word}|${0:substring(l.all_settings:product:descrip,1,200)}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-mveval": {
+		"prefix": "tk-mveval",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"mveval|${0:l.all_settings:product:price * 1.1}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-newsubstring": {
+		"prefix": "tk-newsubstring",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"newsubstring|${1:new_desc}|${2:l.all_settings:product:descrip},${3:1},${0:200}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-nextprevious": {
+		"prefix": "tk-nextprevious",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"nextprevious|${0:l.all_settings:product:code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-no_apostrophe": {
+		"prefix": "tk-no_apostrophe",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"no_apostrophe|${1:new_descrip2}|${0:new_descrip}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-padl": {
+		"prefix": "tk-padl",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"padl|${1:csecond}|${2:nsecond}|${3:2}|${0:0}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-padr": {
+		"prefix": "tk-padr",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"padr|${1:csecond}|${2:nsecond}|${3:2}|${0:0}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-parentcat": {
+		"prefix": "tk-parentcat",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"parentcat|${0:pccount}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-pastorders": {
+		"prefix": "tk-pastorders",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"pastorders|${0:ordersum}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-pgroup-p": {
+		"prefix": "tk-pgroup-p",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"pgroup-p|${1:prdcount}|${0:g.Product_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-pgroup": {
+		"prefix": "tk-pgroup",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"pgroup|${0:pcount}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-pgrpinsert": {
+		"prefix": "tk-pgrpinsert",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"pgrpinsert|${1:maxgrp}|${0:Chairman}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-prodthumb": {
+		"prefix": "tk-prodthumb",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"prodthumb|${1:imgurl}|${0:l.all_settings:item:code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-productincategory": {
+		"prefix": "tk-productincategory",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"productincategory|${1:incatcount}|${0:g.Product_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-productmeta": {
+		"prefix": "tk-productmeta",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"productmeta|${1:CODE}|${0:l.all_settings:product:code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-prompt": {
+		"prefix": "tk-prompt",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"prompt\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-quick": {
+		"prefix": "tk-quick",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"quick|${1:pcount}|${2:${3:1AA00100,}${4:${5:1S_00002,}${6:${7:PB_00001,}${8:${9:1S_00004,}${0:LCS00002}}}}}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-random": {
+		"prefix": "tk-random",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"random|${1:nrandom}|${0:100}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-randomall": {
+		"prefix": "tk-randomall",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"randomall|${1:pcount}|${0:5}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-randomcat": {
+		"prefix": "tk-randomcat",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"sassign|${1:cat_code}|${0:SPECIALS}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-related": {
+		"prefix": "tk-related",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"related|${1:pcount}|${0:g.Product_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-render": {
+		"prefix": "tk-render",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"render|${0:MINI}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-sassign": {
+		"prefix": "tk-sassign",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"sassign|${1:greeting}|${0:Happy Mother\\\\'s Day}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-sendpage": {
+		"prefix": "tk-sendpage",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"sendpage\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-sexists": {
+		"prefix": "tk-sexists",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"sexists|${1:vpath}|${0:filename}\" /> \n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-sglosub": {
+		"prefix": "tk-sglosub",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"sglosub|${1:l.all_settings:product:descrip},${2:function},${0:features}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-shipcalc": {
+		"prefix": "tk-shipcalc",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"shipcalc|${1:1}|${2:1}|${3:1}|${4:cost}|${0:sortship}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-states": {
+		"prefix": "tk-states",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"states\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-subcat": {
+		"prefix": "tk-subcat",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"subcat|${1:ccount}|{$0:g.Category_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-substring": {
+		"prefix": "tk-substring",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"substring|${1:l.all_settings:product:descrip},${2:1},${0:20}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-subtotal": {
+		"prefix": "tk-subtotal",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"subtotal|${0:basketsubtotal}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-subtotalorder": {
+		"prefix": "tk-subtotalorder",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"subtotalorder|${0:ordersubtotal}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-updatebasket": {
+		"prefix": "tk-updatebasket",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"updatebasket|${1:ship_state}|${0:g.value}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-vassign": {
+		"prefix": "tk-vassign",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"vassign|${1:product_name}|${0:l.all_settings:product:name}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-vacreate": {
+		"prefix": "tk-vacreate",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"vacreate|${1:cast}|${2:l.all_settings:product:customfield_values:customfields:actors}|${0:,}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-vglosub": {
+		"prefix": "tk-vglosub",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"vglosub|${1:l.all_settings:product:descrip},${2:%product_name%},${0:l.all_settings:product:name}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-vlength": {
+		"prefix": "tk-vlength",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"vlength|${1:name_length}|${0:l.all_settings:product:name}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-vproduct_find": {
+		"prefix": "tk-vproduct_find",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"vproduct_find|${1:productfound}|${0:Product_Code}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	},
+	"tk-weight": {
+		"prefix": "tk-weight",
+		"body": "\n<mvt:item name=\"toolkit\" param=\"weight|${0:totalweight}\" />\n",
+		"description": "Toolkit",
+		"scope": "text.mvt - source.mvt - string"
+	}
+}
