@@ -17,7 +17,7 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mivaecommerce/mvt"
+    "url": "https://github.com/mikeabrams/miva-mvt"
   },
   "extensionPack": [
     "miva.mivamvt"
