@@ -1,28 +1,21 @@
 # Miva MVT Syntax and Snippets README
 
-Extension README. After writing up a brief description, we recommend including the following sections.
+Extension for Miva Template Language
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Extension Settings
-
-This extension contributes the following settings:
-
-- `myExtension.enable`: enable/disable this extension
-- `myExtension.thing`: set to `blah` to do something
+> Note: Work in progress.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+First release.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release.
 
 ---
 
-## Working with Markdown
+## Work in Progress
 
-**Note:** You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+**Note:** This is a work in progress.
 
 **Enjoy!**
