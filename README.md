@@ -2,20 +2,26 @@
 
 Extension for Miva Template Language
 
-> Note: Work in progress.
+> Tip: typing mva would bring up mvt:assign.
+
+## Example
+
+|        Prefix | Method                           |
+| ------------: | -------------------------------- |
+| `mvt:assign→` | `assign variable`                |
+|     `mvt:do→` | `access built in Miva functions` |
+|   `mvt:else→` | `elseif statement`               |
+| `mvt:foreach` | `standard foreach loop`          |
 
 ## Release Notes
 
-First release.
+**Note:** This is a work in progress.
 
-### 1.0.0
+### Extention Support
 
-Initial release.
+- Miva Template (.mvt)
+- Basic HTML (.html)
 
 ---
-
-## Work in Progress
-
-**Note:** This is a work in progress.
 
 **Enjoy!**
