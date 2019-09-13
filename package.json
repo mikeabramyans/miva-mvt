@@ -2,10 +2,13 @@
   "name": "mivamvt",
   "displayName": "Miva MVT Syntax and Snippets",
   "description": "Miva Template Language Syntax and Snippets",
-  "publisher": "Mike Abramyans",
+  "publisher": "mikeabramyans",
+  "author": "Mike Abramyans",
   "version": "1.0.0",
   "keywords": [
     "snippets",
+    "syntax",
+    "language",
     "miva"
   ],
   "engines": {
@@ -16,17 +19,14 @@
     "type": "git",
     "url": "https://github.com/mivaecommerce/mvt"
   },
+  "extensionPack": [
+    "miva.mivamvt"
+  ],
   "categories": [
     "Snippets",
     "Programming Languages"
   ],
   "contributes": {
-    "snippets": [
-      {
-        "language": "miva-template",
-        "path": "./snippets/snippets.json"
-      }
-    ],
     "languages": [
       {
         "id": "miva-template",
@@ -36,8 +36,7 @@
         ],
         "extensions": [
           ".mvt",
-          ".html",
-          ".htm"
+          ".html"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -47,6 +46,12 @@
         "language": "miva-template",
         "scopeName": "text.html.mvt",
         "path": "./syntaxes/MVT.tmLanguage"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "miva-template",
+        "path": "./snippets/snippets.json"
       }
     ]
   }
