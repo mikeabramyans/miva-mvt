@@ -2,6 +2,10 @@
 
 All notable changes to the "mivasnippets" extension will be documented in this file.
 
+### 1.2.1
+
+- Fixed comment block support.
+
 ### 1.2.0
 
 - Readme updates.

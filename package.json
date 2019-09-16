@@ -49,6 +49,10 @@
       {
         "language": "miva-template",
         "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "miva-template",
+        "path": "./snippets/functions.json"
       }
     ]
   }
