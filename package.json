@@ -33,7 +33,8 @@
         ],
         "extensions": [
           ".mvt",
-          ".html"
+          ".html",
+          ".htm"
         ],
         "configuration": "./language-configuration.json"
       }
