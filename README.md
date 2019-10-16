@@ -16,11 +16,12 @@ Extension for Miva Template Language
 ## Release Notes
 
 This is a work in progress.
-**TODO:** Add functions support and Miva Script support.
+**TODO:** Add functions support.
 
 ### Extention Support
 
 - Miva Template (.mvt)
+- Miva Script (.mv)
 - Basic HTML (.html)
 - Page Export (.htm)
 

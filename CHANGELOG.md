@@ -2,6 +2,10 @@
 
 All notable changes to the "Miva MVT Syntax and Snippets" extension will be documented in this file.
 
+### 1.2.3
+
+- Added .mv support for Miva Script.
+
 ### 1.2.2
 
 - Added .htm support for page exports.

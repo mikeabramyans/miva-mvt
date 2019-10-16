@@ -1,0 +1,222 @@
+{
+  "miva": {
+    "body": "<MIVA STANDARDOUTPUTLEVEL = \"${1:html, text, compresswhitespace}\"${2: ERROROUTPUTLEVEL = \"${3:runtime | null string}${3/(r$)|.*/?1:untime/}\"}${4: ERRORMESSAGE = \"${5:[string] literal}\"}${6: MvTAGNAME_ERROR = \"${7:fatal | nonfatal, display | nodisplay}${7/(f$)|(non$)|(nod$)|.*/?1:atal:?2:fatal, display:?3:isplay/}\"}>$0",
+    "description": "Tag - Miva",
+    "prefix": "miva"
+  },
+  "mvadd": {
+    "body": "<MvADD NAME = \"${1:\\{ ${2:expression | [string] literal} \\}}\" VIEW = \"${3:\\{ ${4:expression | [string] literal} \\}}\">$0",
+    "description": "Tag - Add",
+    "prefix": "mvadd"
+  },
+  "mvassembly": {
+    "body": "<MvASSEMBLY>\n\t${2:<MvCOMMENT>\n\t| ** New in 5.18 **\n\t| MvASSEMBLY allows MivaScript assembly code to be interleaved with traditional MivaScript.\n\t| The content of the MvASSEMBLY tag is passed unmodified to the MivaScript assembler.\n\t</MvCOMMENT>}\n\t$1\n</MvASSEMBLY>$0",
+    "description": "Tag - Assembly",
+    "prefix": "mvassembly"
+  },
+  "mvassign--v": {
+    "body": "<MvASSIGN NAME = \"${1:\\{ ${2:expression | variable name} \\}}\" VALUE = \"${3:\\{ ${4:expression | [mixed] literal} \\}}\" ${5: INDEX = \"${6:\\{ ${7:expression | [numeric] literal} \\}}\"} ${8: MEMBER = \"${9:\\{ ${10:expression | [string] literal} \\}}\"}>$0",
+    "description": "Tag - Assign (Verbose)",
+    "prefix": "mvassign--v"
+  },
+  "mvassign": {
+    "body": "<MvASSIGN NAME = \"$1\" VALUE = \"${3:\\{ ${4:expression | [mixed] literal} \\}}\">$0",
+    "description": "Tag - Assign",
+    "prefix": "mvassign"
+  },
+  "mvassignarray": {
+    "body": "<MvASSIGNARRAY NAME = \"${1:\\{ ${2:expression | [string] literal} \\}}\" VALUE = \"${3:\\{ ${4:expression | [mixed] literal} \\}}\">\n\t${5:<MvDIMENSION INDEX = \"${6:[numeric] literal}\">}\n\t${7:<MvMEMBER NAME = \"${8:[string] literal}\">}\n</MvASSIGNARRAY>$0",
+    "description": "Tag - Assign Array",
+    "prefix": "mvassignarray"
+  },
+  "mvasynchronous": {
+    "body": "<MvASYNCHRONOUS>\n\t${1:<MvCOMMENT>\n\t| Code within a <MvASYNCHRONOUS> and </MvASYNCHRONOUS> block will start to execute in a separate asynchronous task, and the task will exit when the </MvASYNCHRONOUS> block is reached.\n\t| All output, even via <MvEVAL>, is discarded from the asynchronous task.\n\t</MvCOMMENT>}\n\t$2\n</MvASYNCHRONOUS>$0",
+    "description": "Tag - Asynchronous",
+    "prefix": "mvasynchronous"
+  },
+  "mvcall--v": {
+    "body": "<MvCALL ACTION = \"${1:\\{ ${2:expression | [string] literal} \\}}\"\n\t\tMETHOD = \"${3:get|post|head|xml|raw|options|put|delete|trace|connect|patch|link|unlink}${3/(g$)|(po$)|(h$)|(x$)|(r$)|(o$)|(pu$)|(d$)|(t$)|(c$)|(pa$)|(l$)|(u$)|.*/?1:et:?2:st:?3:ead:?4:ml:?5:aw:?6:ptions:?7:t:?8:elete:?9:race:?10:onnect:?11:tch:?12:ink:?13:nlink/}\"\n\t\t${4:CONTENT-TYPE = \"${5:\\{ ${6:expression | [string] literal} \\}}\"}\n\t\t${7:FIELDS = \"${8:\\{ ${9:expression | variable list} \\}}\"}\n\t\t${10:CERTFILE = \"${11:\\{ ${12:expression | [string] literal} \\}}\"}\n\t\t${13:CERTTYPE = \"${14:\\{ ${15:expression | [string] literal} \\}}\"}\n\t\t${16:CERTPASS = \"${17:\\{ ${18:expression | [string] literal} \\}}\"}\n\t\t${19:CERTVALUE = \"${20:\\{ ${21:expression | [string] literal} \\}}\"}\n\t\t${22:TIMEOUT = \"${23:\\{ ${24:expression | [string] literal} \\}}\"}\n\t\t${25:HEADERS = \"${26:\\{ ${27:expression | [string] literal} \\}}\"}\n>\n\t$28\n</MvCALL>$0",
+    "description": "Tag - Call (Verbose)",
+    "prefix": "mvcall--v"
+  },
+  "mvcall": {
+    "body": "<MvCALL ACTION = \"${1:\\{ ${2:expression | [string] literal} \\}}\" METHOD = \"${3:get|post|head|xml|raw|options|put|delete|trace|connect|patch|link|unlink}${3/(g$)|(po$)|(h$)|(x$)|(r$)|(o$)|(pu$)|(d$)|(t$)|(c$)|(pa$)|(l$)|(u$)|.*/?1:et:?2:st:?3:ead:?4:ml:?5:aw:?6:ptions:?7:t:?8:elete:?9:race:?10:onnect:?11:tch:?12:ink:?13:nlink/}\">\n\t$4\n</MvCALL>$0",
+    "description": "Tag - Call",
+    "prefix": "mvcall"
+  },
+  "mvcallcontinue": {
+    "body": "<MvCALLCONTINUE>$0",
+    "description": "Tag - Call Continue",
+    "prefix": "mvcallcontinue"
+  },
+  "mvcallstop": {
+    "body": "<MvCALLSTOP>$0",
+    "description": "Tag - Call Stop",
+    "prefix": "mvcallstop"
+  },
+  "mvcapture": {
+    "body": "<MvCAPTURE VARIABLE = \"${1:\\{ ${2:expression | variable name} \\}}\" ${3:STANDARDOUTPUTLEVEL = \"${4:html, text, compresswhitespace}\"}>\n\t$5\n</MvCAPTURE>$0",
+    "description": "Tag - Capture",
+    "prefix": "mvcapture"
+  },
+  "mvclose": {
+    "body": "<MvCLOSE NAME = \"${1:\\{ ${2:expression | database alias} \\}}\">$0",
+    "description": "Tag - Close",
+    "prefix": "mvclose"
+  },
+  "mvcloseview": {
+    "body": "<MvCLOSEVIEW ${1:NAME = \"${2:\\{ ${3:expression | database alias} \\}}\"} VIEW = \"${4:\\{ ${5:expression | [string] literal} \\}}\">$0",
+    "description": "Tag - Close View",
+    "prefix": "mvcloseview"
+  },
+  "mvcommerce": {
+    "body": "<MvCOMMERCE>\n\t${2:<MvCOMMENT>\n\t| Provides communications between a Miva Script application and an external commerce library.\n\t| It will loop until it no longer receives data, or until it is explicitly halted with the <MvCOMMERCESTOP> tag.\n\t</MvCOMMENT>}\n\t$1\n</MvCOMMERCE>$0",
+    "description": "Tag - Commerce",
+    "prefix": "mvcommerce"
+  },
+  "mvcommercecontinue": {
+    "body": "<MvCOMMERCECONTINUE>$0",
+    "description": "Tag - Commerce Continue",
+    "prefix": "mvcommercecontinue"
+  },
+  "mvcommercestop": {
+    "body": "<MvCOMMERCESTOP>$0",
+    "description": "Tag - Commerce Stop",
+    "prefix": "mvcommercestop"
+  },
+  "mvcommit": {
+    "body": "<MvCOMMIT NAME = \"${1:\\{ ${2:expression | literal} \\}}\">$0",
+    "description": "Tag - Commit",
+    "prefix": "mvcommit"
+  },
+  "mvcreate": {
+    "body": "<MvCREATE NAME = \"${1:\\{ ${2:expression | [string] literal} \\}}\" DATABASE = \"${3:\\{ ${4:expression | [string] literal} \\}}\" FIELDS = \"${5:\\{ ${6:expression | variable list} \\}}\" TYPE = \"${7:xbase3 | user defined}${7/(x$)|.*/?1:base3/}\">$0",
+    "description": "Tag - Create",
+    "prefix": "mvcreate"
+  },
+  "mvdbcommand": {
+    "body": "<MvDBCOMMAND NAME = \"${1:\\{ ${2:expression | [string] literal} \\}}\" COMMAND = \"${3:\\{ ${4:expression | [string] command-name} \\}}\"${5: PARAMETER = \"${6:optional}\"}>$0",
+    "description": "Tag - DB Command",
+    "prefix": "mvdbcommand"
+  },
+  "mvdelete": {
+    "body": "<MvDELETE NAME = \"${1:\\{ ${2:expression | [string] literal } \\}}\" ${3:VIEW = \"${4:\\{ ${5:expression | [string] literal } \\}}\"}>$0",
+    "description": "Tag - Delete",
+    "prefix": "mvdelete"
+  },
+  "mvdimension": {
+    "body": "<MvDIMENSION INDEX = \"${1:\\{ ${2:expression | [numeric] literal } \\}}\">$0",
+    "description": "Tag - Dimension",
+    "prefix": "mvdimension"
+  },
+  "mvdo--v": {
+    "body": "<MvDO FILE = \"${1:\\{ ${2:expression | [string] literal} \\}}\" NAME = \"${3:\\{ ${4:expression | [mixed] literal} \\}}\" VALUE = \"{ $5 }\">$0",
+    "description": "Tag - Do (Verbose)",
+    "prefix": "mvdo--v"
+  },
+  "mvdo": {
+    "body": "<MvDO FILE = \"{ $3 }\" NAME = \"${2:l.return}\" VALUE = \"{ ${1:function} }\">$0",
+    "description": "Tag - Do",
+    "prefix": "mvdo"
+  },
+  "mvelse": {
+    "body": "<MvELSE>$0",
+    "description": "Tag - Else",
+    "prefix": "mvelse"
+  },
+  "mvelseif": {
+    "body": "<MvELSEIF EXPR = \"{ ${1:expression} }\">$0",
+    "description": "Tag - Else If",
+    "prefix": "mvelseif"
+  },
+  "mveval": {
+    "body": "<MvEVAL EXPR = \"{ ${1:expression} }\">$0",
+    "description": "Tag - Eval",
+    "prefix": "mveval"
+  },
+  "mvexit": {
+    "body": "<MvEXIT>$0",
+    "description": "Tag - Exit",
+    "prefix": "mvexit"
+  },
+  "mvexport": {
+    "body": "<MvEXPORT FILE = \"${1:\\{ ${2:expression | [string] literal} \\}}\" FIELDS = \"${3:\\{ ${4:expression | variable list} \\}}\" DELIMITER = \"${5:\\{ ${6:expression | [string] literal} \\}}\">$0",
+    "description": "Tag - Export",
+    "prefix": "mvexport"
+  },
+  "MvFILTER": {
+    "body": "<MvFILTER NAME = \"${1:\\{ ${2:expression | [string] literal} \\}}\" FILTER_TYPE = \"${3:\\{ ${4:expression | variable} \\}}\" FILTER = \"\\{ ${5:expression} \\}\">$0",
+    "description": "Tag - Filter",
+    "prefix": "MvFILTER"
+  },
+  "mvfind": {
+    "body": "<MvFIND NAME = \"${1:\\{ ${2:expression | [string] literal} \\}}\" VALUE = \"${3:\\{ ${4:expression | [string] literal} \\}}\"${5: VIEW = \"${6:\\{ ${7:expression | [string] literal} \\}}\"}${8: EXACT}>$0",
+    "description": "Tag - Find",
+    "prefix": "mvfind"
+  },
+  "mvfor--v": {
+    "body": "<MvFOR ${1:INDEX = \"${2:\\{ ${3:expression | [string] literal} \\}}\"} ${4:COUNT = \"\\{ ${5:expression} \\}\"} ${6:FIRST = \"\\{ ${7:expression} \\}\"} ${8:NEXT = \"\\{ ${9:expression} \\}\"} ${10:LAST = \"\\{ ${11:expression} \\}\"} ${12:EXPR = \"\\{ ${13:expression} \\}\"}>\n\t$14\n</MvFOR>$0",
+    "description": "Tag - For (Verbose)",
+    "prefix": "mvfor--v"
+  },
+  "mvfor": {
+    "body": "<MvFOR EXPR = \"\\{ ${1:expression} \\}\">\n\t$2\n</MvFOR>$0",
+    "description": "Tag - For",
+    "prefix": "mvfor"
+  },
+  "mvforcontinue": {
+    "body": "<MvFORCONTINUE>$0",
+    "description": "Tag - For Continue",
+    "prefix": "mvforcontinue"
+  },
+  "mvforeach--v": {
+    "body": "<MvFOREACH ITERATOR = \"${1:\\{ ${2:expression | variable name} \\}}\" ARRAY = \"${3:\\{ ${4:expression | variable name} \\}}\"${5: INDEX = \"${6:\\{ ${7:expression | variable name} \\}}\"}${8: FIRST = \"\\{ ${9:expression} \\}\"}${10: NEXT = \"\\{ ${11:expression} \\}\"}${12: LAST = \"\\{ ${13:expression} \\}\"}${14: COUNT = \"\\{ ${15:expression} \\}\"}>\n\t$16\n</MvFOREACH>$0",
+    "description": "Tag - ForEach (Verbose)",
+    "prefix": "mvforeach--v"
+  },
+  "mvforeach": {
+    "body": "<MvFOREACH ITERATOR = \"${1:variable name}\" ARRAY = \"${2:variable name}\">\n\t$3\n</MvFOREACH>$0",
+    "description": "Tag - ForEach",
+    "prefix": "mvforeach"
+  },
+  "mvforeachcontinue": {
+    "body": "<MvFOREACHCONTINUE>$0",
+    "description": "Tag - ForEach Continue",
+    "prefix": "mvforeachcontinue"
+  },
+  "mvforeachstop": {
+    "body": "<MvFOREACHSTOP>$0",
+    "description": "Tag - ForEach Stop",
+    "prefix": "mvforeachstop"
+  },
+  "mvfunction": {
+    "body": "<MvFUNCTION NAME = \"${1:function name}\" PARAMETERS = \"${2:variable list}\" STANDARDOUTPUTLEVEL = \"${3:html, text, compresswhitespace}\"${4: ERROROUTPUTLEVEL = \"\"}>\n\t$5\n</MvFUNCTION>$0",
+    "description": "Tag - Function",
+    "prefix": "mvfunction"
+  },
+  "mvfunctionreturn": {
+    "body": "<MvFUNCTIONRETURN VALUE = \"${_XXX:\\{ ${_XXX:expression | [mixed] literal} \\}}\">$0",
+    "description": "Tag - Function Return",
+    "prefix": "mvfunctionreturn"
+  },
+  "mvif": {
+    "body": "<MvIF EXPR = \"{ ${1:expression} }\">\n\t$2\n</MvIF>$0",
+    "description": "Tag - If",
+    "prefix": "mvif"
+  },
+  "mvwhile": {
+    "body": "<MvWHILE EXPR = \"{ ${1:expression} }\">\n\t$2\n</MvWHILE>$0",
+    "description": "Tag - While",
+    "prefix": "mvwhile"
+  },
+  "mvwhilecontinue": {
+    "body": "<MvWHILECONTINUE>$0",
+    "description": "Tag - While Continue",
+    "prefix": "mvwhilecontinue"
+  },
+  "mvwhilestop": {
+    "body": "<MvWHILESTOP>$0",
+    "description": "Tag - While Stop",
+    "prefix": "mvwhilestop"
+  }
+}

@@ -36,24 +36,52 @@
           ".html",
           ".htm"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./mvt-language-configuration.json"
+      },
+      {
+        "id": "miva-script",
+        "aliases": [
+          "Miva Script",
+          "miva-script"
+        ],
+        "extensions": [
+          ".mv"
+        ],
+        "configuration": "./mv-language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "miva-template",
         "scopeName": "text.html.mvt",
+        "embeddedLanguages": {
+          "meta.embedded.block.html": "html",
+          "meta.embedded.block.css": "css",
+          "meta.embedded.block.json": "json",
+          "meta.embedded.block.javascript": "javascript"
+        },
         "path": "./syntaxes/MVT.tmLanguage"
+      },
+      {
+        "language": "miva-script",
+        "scopeName": "source.miva_script",
+        "embeddedLanguages": {
+          "meta.embedded.block.html": "html",
+          "meta.embedded.block.css": "css",
+          "meta.embedded.block.json": "json",
+          "meta.embedded.block.javascript": "javascript"
+        },
+        "path": "./syntaxes/MV.tmLanguage"
       }
     ],
     "snippets": [
       {
         "language": "miva-template",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/mvt-snippets.json"
       },
       {
-        "language": "miva-template",
-        "path": "./snippets/functions.json"
+        "language": "miva-script",
+        "path": "./snippets/mv-snippets.json"
       }
     ]
   }
