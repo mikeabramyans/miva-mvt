@@ -1,6 +1,6 @@
 # Miva MVT Syntax and Snippets README
 
-Extension for Miva Template Language
+Extension for Miva Script & Template Language
 
 > Example: typing mva would bring up mvt:assign.
 

@@ -2,6 +2,11 @@
 
 All notable changes to the "Miva MVT Syntax and Snippets" extension will be documented in this file.
 
+### 1.3.1
+
+- Updated extension name
+- Updated tmLanguage file to JSON
+
 ### 1.3.0
 
 - Added .mv support for Miva Script.

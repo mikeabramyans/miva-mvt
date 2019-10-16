@@ -1,7 +1,7 @@
 {
   "name": "mivamvt",
-  "displayName": "Miva MVT Syntax and Snippets",
-  "description": "Miva Template Language Syntax and Snippets",
+  "displayName": "Miva Syntax and Snippets",
+  "description": "Miva Template and Miva Script Language Syntax and Snippets",
   "publisher": "mikeabramyans",
   "author": "Mike Abramyans",
   "version": "1.3.0",
@@ -54,24 +54,12 @@
       {
         "language": "miva-template",
         "scopeName": "text.html.mvt",
-        "embeddedLanguages": {
-          "meta.embedded.block.html": "html",
-          "meta.embedded.block.css": "css",
-          "meta.embedded.block.json": "json",
-          "meta.embedded.block.javascript": "javascript"
-        },
-        "path": "./syntaxes/MVT.tmLanguage"
+        "path": "./syntaxes/mvt.tmLanguage.json"
       },
       {
         "language": "miva-script",
         "scopeName": "source.miva_script",
-        "embeddedLanguages": {
-          "meta.embedded.block.html": "html",
-          "meta.embedded.block.css": "css",
-          "meta.embedded.block.json": "json",
-          "meta.embedded.block.javascript": "javascript"
-        },
-        "path": "./syntaxes/MV.tmLanguage"
+        "path": "./syntaxes/mv.tmLanguage.json"
       }
     ],
     "snippets": [
