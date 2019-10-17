@@ -1,0 +1,372 @@
+{
+  "tk-agroup-c": {
+    "body": "<mvt:item name=\"toolkit\" param=\"agroup-c|${1:acatcount}|${0:g.Category_Code}\" />$0",
+    "description": ["Toolkit", "Toolkit"],
+    "prefix": "tk-agroup-c"
+  },
+  "tk-agroup-cats": {
+    "body": "<mvt:item name=\"toolkit\" param=\"agroup-cats|${1:acatcount}|${0:l.settings:agroup:name}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-agroup-cats"
+  },
+  "tk-agroup-p": {
+    "body": "<mvt:item name=\"toolkit\" param=\"agroup-p|${1:aprdcount}|${0:g.Product_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-agroup-p"
+  },
+  "tk-agroup": {
+    "body": "<mvt:item name=\"toolkit\" param=\"agroup|${0:acount}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-agroup"
+  },
+  "tk-agrpinsert": {
+    "body": "<mvt:item name=\"toolkit\" param=\"agrpinsert|${1:avail}|${0:Wholesale}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-agrpinsert"
+  },
+  "tk-alsobought": {
+    "body": "<mvt:item name=\"toolkit\" param=\"alsobought|${0:250}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-alsobought"
+  },
+  "tk-attr": {
+    "body": "<mvt:item name=\"toolkit\" param=\"attr|${1:acount}|${0:l.all_settings:product:id}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-attr"
+  },
+  "tk-basket": {
+    "body": "<mvt:item name=\"toolkit\" param=\"basket|${0:itemcount}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-basket"
+  },
+  "tk-bestseller": {
+    "body": "<mvt:item name=\"toolkit\" param=\"bestseller|${1:pcount}|${2:g.Category_Code}|${3:5}|${0:1}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-bestseller"
+  },
+  "tk-breadcrumb": {
+    "body": "<mvt:item name=\"toolkit\" param=\"breadcrumb|${1:b_count}|${0:g.Category_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-breadcrumb"
+  },
+  "tk-callurl": {
+    "body": "<mvt:item name=\"toolkit\" param=\"callurl|${1:sample}|${2:http://www.mydomain.com/subscribe.php}|${3:POST}|${4:sublist},${5:ship_lname},${0:ship_email}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-callurl"
+  },
+  "tk-categorymeta": {
+    "body": "<mvt:item name=\"toolkit\" param=\"categorymeta|${1:CODE}|${0:l.all_settings:category:code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-categorymeta"
+  },
+  "tk-catimage": {
+    "body": "<mvt:item name=\"toolkit\" param=\"catimage|${1:bigimage}|${0:l.all_settings:parent_category:code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-catimage"
+  },
+  "tk-catpages": {
+    "body": "<mvt:item name=\"toolkit\" param=\"catpages|${0:l.all_settings:category:id}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-catpages"
+  },
+  "tk-cattreeimage": {
+    "body": "<mvt:item name=\"toolkit\" param=\"cattreeimage|${1:smallimage}|${0:l.all_settings:parent_category:code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-cattreeimage"
+  },
+  "tk-childof": {
+    "body": "<mvt:item name=\"toolkit\" param=\"childof|${1:parentfound}|${0:g.Category_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-childof"
+  },
+  "tk-clearall": {
+    "body": "<mvt:item name=\"toolkit\" param=\"clearall\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-clearall"
+  },
+  "tk-concat": {
+    "body": "<mvt:item name=\"toolkit\" param=\"concat|${1:newstring}|${2:var1}|${0:var2}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-concat"
+  },
+  "tk-counter": {
+    "body": "<mvt:item name=\"toolkit\" param=\"counter|${1:current_nbr}|${0:g.offset}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-counter"
+  },
+  "tk-currencyformat": {
+    "body": "<mvt:item name=\"toolkit\" param=\"currencyformat|${1:formatted_savings}|${0:difference}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-currencyformat"
+  },
+  "tk-custinsert": {
+    "body": "<mvt:item name=\"toolkit\" param=\"custinsert|${1:taxid}|${0:g.mytax}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-custinsert"
+  },
+  "tk-custom": {
+    "body": "<mvt:item name=\"toolkit\" param=\"custom|${1:studio}|${2:l.all_settings:item:product_id}|${0:company}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-custom"
+  },
+  "tk-customer": {
+    "body": "<mvt:item name=\"toolkit\" param=\"customer|${1:member}|${0:membership}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-customer"
+  },
+  "tk-cxp": {
+    "body": "<mvt:item name=\"toolkit\" param=\"cxp|${1:pcount}|${0:l.all_settings:sub_category:id}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-cxp"
+  },
+  "tk-footer": {
+    "body": "<mvt:item name=\"toolkit\" param=\"footer|${0:catfoot}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-footer"
+  },
+  "tk-gettoken": {
+    "body": "<mvt:item name=\"toolkit\" param=\"gettoken|${1:l.all_settings:product:descrip},${2:#},${0:2}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-gettoken"
+  },
+  "tk-header": {
+    "body": "<mvt:item name=\"toolkit\" param=\"header|${0:cathead}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-header"
+  },
+  "tk-import": {
+    "body": "<mvt:item name=\"toolkit\" param=\"import|${1:megalist}|${2:cust.dat}|${0:crlf}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-import"
+  },
+  "tk-last": {
+    "body": "<mvt:item name=\"toolkit\" param=\"basket|${0:itemcount}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-last"
+  },
+  "tk-lasturl": {
+    "body": "<mvt:item name=\"toolkit\" param=\"lasturl|${1:url}|${0:http://www.yourdomain.com/mm5/merchant.mvc}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-lasturl"
+  },
+  "tk-logbackin": {
+    "body": "<mvt:item name=\"toolkit\" param=\"logbackin|${0:10}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-logbackin"
+  },
+  "tk-math_add": {
+    "body": "<mvt:item name=\"toolkit\" param=\"math_add|${1:sum}|${2:l.all_settings:product:price}|${0:l.all_settings:product:cost}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-math_add"
+  },
+  "tk-math_divide": {
+    "body": "<mvt:item name=\"toolkit\" param=\"math_divide|${1:result}|${2:l.all_settings:product:cost}|${0:l.all_settings:product:price}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-math_divide"
+  },
+  "tk-math_multiply": {
+    "body": "<mvt:item name=\"toolkit\" param=\"math_multiply|${1:times}|${2:l.all_settings:product:cost}|${0:l.all_settings:product:price}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-math_multiply"
+  },
+  "tk-math_subtract": {
+    "body": "<mvt:item name=\"toolkit\" param=\"math_subtract|${1:difference}|${2:l.all_settings:product:cost}|${0:l.all_settings:product:price}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-math_subtract"
+  },
+  "tk-mvassign": {
+    "body": "<mvt:item name=\"toolkit\" param=\"mvassign|${1:word}|${0:substring(l.all_settings:product:descrip,1,200)}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-mvassign"
+  },
+  "tk-mveval": {
+    "body": "<mvt:item name=\"toolkit\" param=\"mveval|${0:l.all_settings:product:price * 1.1}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-mveval"
+  },
+  "tk-newsubstring": {
+    "body": "<mvt:item name=\"toolkit\" param=\"newsubstring|${1:new_desc}|${2:l.all_settings:product:descrip},${3:1},${0:200}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-newsubstring"
+  },
+  "tk-nextprevious": {
+    "body": "<mvt:item name=\"toolkit\" param=\"nextprevious|${0:l.all_settings:product:code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-nextprevious"
+  },
+  "tk-no_apostrophe": {
+    "body": "<mvt:item name=\"toolkit\" param=\"no_apostrophe|${1:new_descrip2}|${0:new_descrip}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-no_apostrophe"
+  },
+  "tk-padl": {
+    "body": "<mvt:item name=\"toolkit\" param=\"padl|${1:csecond}|${2:nsecond}|${3:2}|${0:0}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-padl"
+  },
+  "tk-padr": {
+    "body": "<mvt:item name=\"toolkit\" param=\"padr|${1:csecond}|${2:nsecond}|${3:2}|${0:0}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-padr"
+  },
+  "tk-parentcat": {
+    "body": "<mvt:item name=\"toolkit\" param=\"parentcat|${0:pccount}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-parentcat"
+  },
+  "tk-pastorders": {
+    "body": "<mvt:item name=\"toolkit\" param=\"pastorders|${0:ordersum}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-pastorders"
+  },
+  "tk-pgroup-p": {
+    "body": "<mvt:item name=\"toolkit\" param=\"pgroup-p|${1:prdcount}|${0:g.Product_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-pgroup-p"
+  },
+  "tk-pgroup": {
+    "body": "<mvt:item name=\"toolkit\" param=\"pgroup|${0:pcount}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-pgroup"
+  },
+  "tk-pgrpinsert": {
+    "body": "<mvt:item name=\"toolkit\" param=\"pgrpinsert|${1:maxgrp}|${0:Chairman}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-pgrpinsert"
+  },
+  "tk-prodthumb": {
+    "body": "<mvt:item name=\"toolkit\" param=\"prodthumb|${1:imgurl}|${0:l.all_settings:item:code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-prodthumb"
+  },
+  "tk-productincategory": {
+    "body": "<mvt:item name=\"toolkit\" param=\"productincategory|${1:incatcount}|${0:g.Product_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-productincategory"
+  },
+  "tk-productmeta": {
+    "body": "<mvt:item name=\"toolkit\" param=\"productmeta|${1:CODE}|${0:l.all_settings:product:code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-productmeta"
+  },
+  "tk-prompt": {
+    "body": "<mvt:item name=\"toolkit\" param=\"prompt\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-prompt"
+  },
+  "tk-quick": {
+    "body": "<mvt:item name=\"toolkit\" param=\"quick|${1:pcount}|${2:${3:1AA00100,}${4:${5:1S_00002,}${6:${7:PB_00001,}${8:${9:1S_00004,}${0:LCS00002}}}}}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-quick"
+  },
+  "tk-random": {
+    "body": "<mvt:item name=\"toolkit\" param=\"random|${1:nrandom}|${0:100}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-random"
+  },
+  "tk-randomall": {
+    "body": "<mvt:item name=\"toolkit\" param=\"randomall|${1:pcount}|${0:5}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-randomall"
+  },
+  "tk-randomcat": {
+    "body": "<mvt:item name=\"toolkit\" param=\"sassign|${1:cat_code}|${0:SPECIALS}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-randomcat"
+  },
+  "tk-related": {
+    "body": "<mvt:item name=\"toolkit\" param=\"related|${1:pcount}|${0:g.Product_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-related"
+  },
+  "tk-render": {
+    "body": "<mvt:item name=\"toolkit\" param=\"render|${0:MINI}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-render"
+  },
+  "tk-sassign": {
+    "body": "<mvt:item name=\"toolkit\" param=\"sassign|${1:greeting}|${0:Happy Mother\\\\'s Day}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-sassign"
+  },
+  "tk-sendpage": {
+    "body": "<mvt:item name=\"toolkit\" param=\"sendpage\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-sendpage"
+  },
+  "tk-sexists": {
+    "body": "<mvt:item name=\"toolkit\" param=\"sexists|${1:vpath}|${0:filename}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-sexists"
+  },
+  "tk-sglosub": {
+    "body": "<mvt:item name=\"toolkit\" param=\"sglosub|${1:l.all_settings:product:descrip},${2:function},${0:features}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-sglosub"
+  },
+  "tk-shipcalc": {
+    "body": "<mvt:item name=\"toolkit\" param=\"shipcalc|${1:1}|${2:1}|${3:1}|${4:cost}|${0:sortship}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-shipcalc"
+  },
+  "tk-states": {
+    "body": "<mvt:item name=\"toolkit\" param=\"states\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-states"
+  },
+  "tk-subcat": {
+    "body": "<mvt:item name=\"toolkit\" param=\"subcat|${1:ccount}|{$0:g.Category_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-subcat"
+  },
+  "tk-substring": {
+    "body": "<mvt:item name=\"toolkit\" param=\"substring|${1:l.all_settings:product:descrip},${2:1},${0:20}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-substring"
+  },
+  "tk-subtotal": {
+    "body": "<mvt:item name=\"toolkit\" param=\"subtotal|${0:basketsubtotal}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-subtotal"
+  },
+  "tk-subtotalorder": {
+    "body": "<mvt:item name=\"toolkit\" param=\"subtotalorder|${0:ordersubtotal}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-subtotalorder"
+  },
+  "tk-updatebasket": {
+    "body": "<mvt:item name=\"toolkit\" param=\"updatebasket|${1:ship_state}|${0:g.value}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-updatebasket"
+  },
+  "tk-vassign": {
+    "body": "<mvt:item name=\"toolkit\" param=\"vassign|${1:product_name}|${0:l.all_settings:product:name}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-vassign"
+  },
+  "tk-vacreate": {
+    "body": "<mvt:item name=\"toolkit\" param=\"vacreate|${1:cast}|${2:l.all_settings:product:customfield_values:customfields:actors}|${0:,}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-vacreate"
+  },
+  "tk-vglosub": {
+    "body": "<mvt:item name=\"toolkit\" param=\"vglosub|${1:l.all_settings:product:descrip},${2:%product_name%},${0:l.all_settings:product:name}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-vglosub"
+  },
+  "tk-vlength": {
+    "body": "<mvt:item name=\"toolkit\" param=\"vlength|${1:name_length}|${0:l.all_settings:product:name}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-vlength"
+  },
+  "tk-vproduct_find": {
+    "body": "<mvt:item name=\"toolkit\" param=\"vproduct_find|${1:productfound}|${0:Product_Code}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-vproduct_find"
+  },
+  "tk-weight": {
+    "body": "<mvt:item name=\"toolkit\" param=\"weight|${0:totalweight}\" />$0",
+    "description": "Toolkit",
+    "prefix": "tk-weight"
+  }
+}

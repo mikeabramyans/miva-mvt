@@ -69,6 +69,10 @@
       },
       {
         "language": "miva-template",
+        "path": "./snippets/mvt-toolkit-snippets.json"
+      },
+      {
+        "language": "miva-template",
         "path": "./snippets/mvt-other-snippets.json"
       },
       {
