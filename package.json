@@ -68,6 +68,10 @@
         "path": "./snippets/mvt-snippets.json"
       },
       {
+        "language": "miva-template",
+        "path": "./snippets/mvt-functions.json"
+      },
+      {
         "language": "miva-script",
         "path": "./snippets/mv-snippets.json"
       }

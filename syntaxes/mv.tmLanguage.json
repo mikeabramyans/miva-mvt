@@ -1,7 +1,5 @@
 {
-  "fileTypes": [
-    "mv"
-  ],
+  "fileTypes": ["mv"],
   "foldingStartMarker": "^\\s*(<[^!?%/](?!.+?(/>|</.+?>))|<[!%]--(?!.+?--%?>)|<%[!]?(?!.+?%>))",
   "foldingStopMarker": "^\\s*(</[^>]+>|[/%]>|-->)\\s*$",
   "keyEquivalent": "^~X",
@@ -77,6 +75,16 @@
         }
       },
       "end": "--%?>",
+      "name": "comment.block.xml"
+    },
+    {
+      "begin": "<MvCOMMENT>",
+      "captures": {
+        "0": {
+          "name": "punctuation.definition.comment.xml"
+        }
+      },
+      "end": "</MvCOMMENT>",
       "name": "comment.block.xml"
     },
     {

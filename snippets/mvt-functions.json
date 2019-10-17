@@ -1,0 +1,1050 @@
+{
+  "abs": {
+    "body": "abs( ${1:number} )$0",
+    "prefix": "abs"
+  },
+  "acos": {
+    "body": "acos( ${1:number} )$0",
+    "prefix": "acos"
+  },
+  "asciichar": {
+    "body": "asciichar( ${1:number} )$0",
+    "prefix": "asciichar"
+  },
+  "asciivalue": {
+    "body": "asciivalue( ${1:character} )$0",
+    "prefix": "asciivalue"
+  },
+  "asin": {
+    "body": "asin( ${1:number} )$0",
+    "prefix": "asin"
+  },
+  "atan": {
+    "body": "atan( ${1:number} )$0",
+    "prefix": "atan"
+  },
+  "atan2": {
+    "body": "atan2( ${1:x}, ${2:y} )$0",
+    "prefix": "atan2"
+  },
+  "bf_decrypt": {
+    "body": "bf_decrypt( ${1:key}, ${2:encrypted}, ${3:plaintext var} )$0",
+    "prefix": "bf_decrypt"
+  },
+  "bf_encrypt": {
+    "body": "bf_encrypt( ${1:key}, ${2:plaintext}, ${3:encrypted var} )$0",
+    "prefix": "bf_encrypt"
+  },
+  "ceil": {
+    "body": "ceil( ${1:number} )$0",
+    "prefix": "ceil"
+  },
+  "cos": {
+    "body": "cos( ${1:number} )$0",
+    "prefix": "cos"
+  },
+  "cosh": {
+    "body": "cosh( ${1:number} )$0",
+    "prefix": "cosh"
+  },
+  "crypto_base64_decode": {
+    "body": "crypto_base64_decode( ${1:data} )$0",
+    "prefix": "crypto_base64_decode"
+  },
+  "crypto_base64_encode": {
+    "body": "crypto_base64_encode( ${1:data} )$0",
+    "prefix": "crypto_base64_encode"
+  },
+  "crypto_cipher_block_size": {
+    "body": "crypto_cipher_block_size( ${1:ciphername} )$0",
+    "prefix": "crypto_cipher_block_size"
+  },
+  "crypto_cipher_iv_length": {
+    "body": "crypto_cipher_iv_length( ${1:ciphername} )$0",
+    "prefix": "crypto_cipher_iv_length"
+  },
+  "crypto_cipher_key_length": {
+    "body": "crypto_cipher_key_length( ${1:ciphername} )$0",
+    "prefix": "crypto_cipher_key_length"
+  },
+  "crypto_cipher_mode": {
+    "body": "crypto_cipher_mode( ${1:ciphername} )$0",
+    "prefix": "crypto_cipher_mode"
+  },
+  "crypto_clear_error": {
+    "body": "crypto_clear_error()$0",
+    "prefix": "crypto_clear_error"
+  },
+  "crypto_digest_block_size": {
+    "body": "crypto_digest_block_size( ${1:digestname} )$0",
+    "prefix": "crypto_digest_block_size"
+  },
+  "crypto_digest_size": {
+    "body": "crypto_digest_size( ${1:digestname} )$0",
+    "prefix": "crypto_digest_size"
+  },
+  "crypto_evp_decrypt": {
+    "body": "crypto_evp_decrypt( ${1:ciphername}, ${2:key}, ${3:iv}, ${4:encrypted}, ${5:plaintext var} )$0",
+    "prefix": "crypto_evp_decrypt"
+  },
+  "crypto_evp_digest": {
+    "body": "crypto_evp_digest( ${1:digestname}, ${2:buffer var}, ${3:digest var} )$0",
+    "prefix": "crypto_evp_digest"
+  },
+  "crypto_evp_encrypt": {
+    "body": "crypto_evp_encrypt( ${1:ciphername}, ${2:key}, ${3:iv}, ${4:plaintext}, ${5:encrypted var} )$0",
+    "prefix": "crypto_evp_encrypt"
+  },
+  "crypto_evp_encrypt_auth": {
+    "body": "crypto_evp_encrypt_auth( ${1:ciphername}, ${2:key}, ${3:iv}, ${4:aad}, ${5:plaintext}, ${6:encrypted var}, ${7:tag var} )$0",
+    "prefix": "crypto_evp_encrypt_auth"
+  },
+  "crypto_evp_hmac": {
+    "body": "crypto_evp_hmac( ${1:digestname}, ${2:key}, ${3:buffer var}, ${4:digest var} )$0",
+    "prefix": "crypto_evp_hmac"
+  },
+  "crypto_evp_sign": {
+    "body": "crypto_evp_sign( ${1:digestname}, ${2:privkey}, ${3:buffer}, ${4:signature var} )$0",
+    "prefix": "crypto_evp_sign"
+  },
+  "crypto_evp_verify": {
+    "body": "crypto_evp_verify( ${1:digestname}, ${2:pubkey}, ${3:buffer}, ${4:signature} )$0",
+    "prefix": "crypto_evp_verify"
+  },
+  "crypto_hmac_md5": {
+    "body": "crypto_hmac_md5( ${1:buffer var}, ${2:key}, ${3:format}, ${4:result var} )$0",
+    "prefix": "crypto_hmac_md5"
+  },
+  "crypto_hmac_sha1": {
+    "body": "crypto_hmac_sha1( ${1:value}, ${2:key}, ${3:output_format}, ${4:output} )$0",
+    "prefix": "crypto_hmac_sha1"
+  },
+  "crypto_hmac_sha256": {
+    "body": "crypto_hmac_sha256( ${1:buffer var}, ${2:key}, ${3:format}, ${4:result var} )$0",
+    "prefix": "crypto_hmac_sha256"
+  },
+  "crypto_last_error": {
+    "body": "crypto_last_error()$0",
+    "prefix": "crypto_last_error"
+  },
+  "crypto_last_ssl_error": {
+    "body": "crypto_last_ssl_error()$0",
+    "prefix": "crypto_last_ssl_error"
+  },
+  "crypto_library_version": {
+    "body": "crypto_library_version( ${1:info} )$0",
+    "prefix": "crypto_library_version"
+  },
+  "crypto_md5": {
+    "body": "crypto_md5( ${1:buffer} )$0",
+    "prefix": "crypto_md5"
+  },
+  "crypto_md5_file": {
+    "body": "crypto_md5_file( ${1:file}, ${2:location}, ${3:hash var} )$0",
+    "prefix": "crypto_md5_file"
+  },
+  "crypto_next_error": {
+    "body": "crypto_next_error()$0",
+    "prefix": "crypto_next_error"
+  },
+  "crypto_pbkdf1": {
+    "body": "crypto_pbkdf1( ${1:digestname}, ${2:password}, ${3:salt}, ${4:iterations}, ${5:dklen}, ${6:dk var} )$0",
+    "prefix": "crypto_pbkdf1"
+  },
+  "crypto_pbkdf2": {
+    "body": "crypto_pbkdf2( ${1:digestname}, ${2:password}, ${3:salt}, ${4:iterations}, ${5:dklen}, ${6:dk var} )$0",
+    "prefix": "crypto_pbkdf2"
+  },
+  "crypto_rand_bytes": {
+    "body": "crypto_rand_bytes( ${1:n} )$0",
+    "prefix": "crypto_rand_bytes"
+  },
+  "crypto_rand_set_rand_engine": {
+    "body": "crypto_rand_set_rand_engine( ${1:engine} )$0",
+    "prefix": "crypto_rand_set_rand_engine"
+  },
+  "crypto_sha1": {
+    "body": "crypto_sha1( ${1:buffer var}, ${2:format}, ${3:result var} )$0",
+    "prefix": "crypto_sha1"
+  },
+  "crypto_sha256": {
+    "body": "crypto_sha256( ${1:buffer var}, ${2:format}, ${3:result var} )$0",
+    "prefix": "crypto_sha256"
+  },
+  "crypto_xor": {
+    "body": "crypto_xor( ${1:buffer var}, ${2:dest var} )$0",
+    "prefix": "crypto_xor"
+  },
+  "decodeattribute": {
+    "body": "decodeattribute( ${1:attribute} )$0",
+    "prefix": "decodeattribute"
+  },
+  "decodeentities": {
+    "body": "decodeentities( ${1:string} )$0",
+    "prefix": "decodeentities"
+  },
+  "dir": {
+    "body": "dir( ${1:path}, ${2:location}, ${3:entries var} )$0",
+    "prefix": "dir"
+  },
+  "encodeattribute": {
+    "body": "encodeattribute( ${1:attribute} )$0",
+    "prefix": "encodeattribute"
+  },
+  "encodeentities": {
+    "body": "encodeentities( ${1:string} )$0",
+    "prefix": "encodeentities"
+  },
+  "encodejavascriptstring": {
+    "body": "encodejavascriptstring( ${1:string} )$0",
+    "prefix": "encodejavascriptstring"
+  },
+  "evp_pkey_derive": {
+    "body": "evp_pkey_derive( ${1:privkey var}, ${2:peer var}, ${3:key var} )$0",
+    "prefix": "evp_pkey_derive"
+  },
+  "evp_pkey_free": {
+    "body": "evp_pkey_free( ${1:key var} )$0",
+    "prefix": "evp_pkey_free"
+  },
+  "evp_pkey_load_mem": {
+    "body": "evp_pkey_load_mem( ${1:data}, ${2:format}, ${3:passphrase}, ${4:pkey var} )$0",
+    "prefix": "evp_pkey_load_mem"
+  },
+  "evp_pkey_load_pubkey_mem": {
+    "body": "evp_pkey_load_pubkey_mem( ${1:data}, ${2:format}, ${3:pkey var} )$0",
+    "prefix": "evp_pkey_load_pubkey_mem"
+  },
+  "evp_pkey_load_pubkey_x509": {
+    "body": "evp_pkey_load_pubkey_x509( ${1:x509 var}, ${2:pkey var} )$0",
+    "prefix": "evp_pkey_load_pubkey_x509"
+  },
+  "exp": {
+    "body": "exp( ${1:number} )$0",
+    "prefix": "exp"
+  },
+  "fchmod": {
+    "body": "fchmod( ${1:path}, ${2:mode} )$0",
+    "prefix": "fchmod"
+  },
+  "fcopy": {
+    "body": "fcopy( ${1:source}, ${2:destination} )$0",
+    "prefix": "fcopy"
+  },
+  "fdelete": {
+    "body": "fdelete( ${1:path} )$0",
+    "prefix": "fdelete"
+  },
+  "fexists": {
+    "body": "fexists( ${1:path} )$0",
+    "prefix": "fexists"
+  },
+  "file_append": {
+    "body": "file_append( ${1:path}, '${2:data/script}${2/(d$)|(da$)|(s$)|(sc$)|.*/?1:ata:?2:ta:?3:cript:?4:ript/}', ${3:data var} )$0",
+    "prefix": "file_append"
+  },
+  "file_create": {
+    "body": "file_create( ${1:path}, '${2:data/script}${2/(d$)|(da$)|(s$)|(sc$)|.*/?1:ata:?2:ta:?3:cript:?4:ript/}', ${3:data var} )$0",
+    "prefix": "file_create"
+  },
+  "file_overwrite": {
+    "body": "file_overwrite( ${1:path}, '${2:data/script}${2/(d$)|(da$)|(s$)|(sc$)|.*/?1:ata:?2:ta:?3:cript:?4:ript/}', ${3:data var} )$0",
+    "prefix": "file_overwrite"
+  },
+  "file_read": {
+    "body": "file_read( ${1:path}, '${2:data/script}${2/(d$)|(da$)|(s$)|(sc$)|.*/?1:ata:?2:ta:?3:cript:?4:ript/}', ${3:data var} )$0",
+    "prefix": "file_read"
+  },
+  "file_read_bytes": {
+    "body": "file_read_bytes( ${1:path}, '${2:data/script}${2/(d$)|(da$)|(s$)|(sc$)|.*/?1:ata:?2:ta:?3:cript:?4:ript/}', ${3:offset}, ${4:length}, ${5:data} )$0",
+    "prefix": "file_read_bytes"
+  },
+  "file_set_time": {
+    "body": "file_set_time( ${1:path}, ${2:location}, ${3:modified} )$0",
+    "prefix": "file_set_time"
+  },
+  "file_touch": {
+    "body": "file_touch( ${1:file}, ${2:location} )$0",
+    "prefix": "file_touch"
+  },
+  "fisdir": {
+    "body": "fisdir( ${1:path} )$0",
+    "prefix": "fisdir"
+  },
+  "floor": {
+    "body": "floor( ${1:number} )$0",
+    "prefix": "floor"
+  },
+  "fmkdir": {
+    "body": "fmkdir( ${1:path} )$0",
+    "prefix": "fmkdir"
+  },
+  "fmod": {
+    "body": "fmod( ${1:x}, ${2:y} )$0",
+    "prefix": "fmod"
+  },
+  "fmode": {
+    "body": "fmode( ${1:path} )$0",
+    "prefix": "fmode"
+  },
+  "frename": {
+    "body": "frename( ${1:source}, ${2:destination} )$0",
+    "prefix": "frename"
+  },
+  "fscopy": {
+    "body": "fscopy( ${1:data_source}, ${2:script_destination} )$0",
+    "prefix": "fscopy"
+  },
+  "fsize": {
+    "body": "fsize( ${1:path} )$0",
+    "prefix": "fsize"
+  },
+  "fsrename": {
+    "body": "fsrename( ${1:source}, ${2:destination} )$0",
+    "prefix": "fsrename"
+  },
+  "fssymlink": {
+    "body": "fssymlink( ${1:source}, ${2:destination} )$0",
+    "prefix": "fssymlink"
+  },
+  "fsymlink": {
+    "body": "fsymlink( ${1:source}, ${2:destination} )$0",
+    "prefix": "fsymlink"
+  },
+  "ftime": {
+    "body": "ftime( ${1:path} )$0",
+    "prefix": "ftime"
+  },
+  "gettoken": {
+    "body": "gettoken( ${1:delimited_string}, ${2:character}, ${3:position} )$0",
+    "prefix": "gettoken"
+  },
+  "glosub": {
+    "body": "glosub( ${1:target_string}, ${2:search}, ${3:replace} )$0",
+    "prefix": "glosub"
+  },
+  "glosub_array": {
+    "body": "glosub_array( ${1:string}, ${2:search}, ${3:replace} )$0",
+    "prefix": "glosub_array"
+  },
+  "indexof": {
+    "body": "indexof( ${1:search_string}, ${2:target_string var}, ${3:start_number} )$0",
+    "prefix": "indexof"
+  },
+  "indexofi": {
+    "body": "indexofi( ${1:search_string}, ${2:target_string var}, ${3:start_number} )$0",
+    "prefix": "indexofi"
+  },
+  "indexofl": {
+    "body": "indexofl( ${1:needle}, ${2:haystack var}, ${3:offset} )$0",
+    "prefix": "indexofl"
+  },
+  "indexofli": {
+    "body": "indexofli( ${1:needle}, ${2:haystack var}, ${3:offset} )$0",
+    "prefix": "indexofli"
+  },
+  "int": {
+    "body": "int( ${1:number} )$0",
+    "prefix": "int"
+  },
+  "isalnum": {
+    "body": "isalnum( ${1:string} )$0",
+    "prefix": "isalnum"
+  },
+  "isalpha": {
+    "body": "isalpha( ${1:string} )$0",
+    "prefix": "isalpha"
+  },
+  "isascii": {
+    "body": "isascii( ${1:string} )$0",
+    "prefix": "isascii"
+  },
+  "iscntrl": {
+    "body": "iscntrl( ${1:string} )$0",
+    "prefix": "iscntrl"
+  },
+  "isdigit": {
+    "body": "isdigit( ${1:string} )$0",
+    "prefix": "isdigit"
+  },
+  "isgraph": {
+    "body": "isgraph( ${1:string} )$0",
+    "prefix": "isgraph"
+  },
+  "islower": {
+    "body": "islower( ${1:string} )$0",
+    "prefix": "islower"
+  },
+  "isprint": {
+    "body": "isprint( ${1:string} )$0",
+    "prefix": "isprint"
+  },
+  "ispunct": {
+    "body": "ispunct( ${1:string} )$0",
+    "prefix": "ispunct"
+  },
+  "isspace": {
+    "body": "isspace( ${1:string} )$0",
+    "prefix": "isspace"
+  },
+  "isupper": {
+    "body": "isupper( ${1:string} )$0",
+    "prefix": "isupper"
+  },
+  "isxdigit": {
+    "body": "isxdigit( ${1:string} )$0",
+    "prefix": "isxdigit"
+  },
+  "keyword_extract": {
+    "body": "keyword_extract( ${1:string}, ${2:keywords var} )$0",
+    "prefix": "keyword_extract"
+  },
+  "keyword_extract_merge": {
+    "body": "keyword_extract_merge( ${1:string}, ${2:weight} )$0",
+    "prefix": "keyword_extract_merge"
+  },
+  "keyword_extract_merge_init": {
+    "body": "keyword_extract_merge_init()$0",
+    "prefix": "keyword_extract_merge_init"
+  },
+  "keyword_extract_merge_results": {
+    "body": "keyword_extract_merge_results( ${1:keywords var} )$0",
+    "prefix": "keyword_extract_merge_results"
+  },
+  "keyword_in": {
+    "body": "keyword_in( ${1:keywords_array var}, ${2:search_string} )$0",
+    "prefix": "keyword_in"
+  },
+  "len": {
+    "body": "len( ${1:string} )$0",
+    "prefix": "len"
+  },
+  "len_var": {
+    "body": "len_var( ${1:string var} )$0",
+    "prefix": "len_var"
+  },
+  "log": {
+    "body": "log( ${1:number} )$0",
+    "prefix": "log"
+  },
+  "log10": {
+    "body": "log10( ${1:number} )$0",
+    "prefix": "log10"
+  },
+  "ltrim": {
+    "body": "ltrim( ${1:string} )$0",
+    "prefix": "ltrim"
+  },
+  "makesessionid": {
+    "body": "makesessionid()$0",
+    "prefix": "makesessionid"
+  },
+  "max": {
+    "body": "max( ${1:a}, ${2:b} )$0",
+    "prefix": "max"
+  },
+  "min": {
+    "body": "min( ${1:a}, ${2:b} )$0",
+    "prefix": "min"
+  },
+  "miva_array_binarysearch": {
+    "body": "miva_array_binarysearch( ${1:key}, ${2:array var}, ${3:callback}, ${4:data var} )$0",
+    "prefix": "miva_array_binarysearch"
+  },
+  "miva_array_clear": {
+    "body": "miva_array_clear( ${1:array var}, ${2:start}, ${3:count} )$0",
+    "prefix": "miva_array_clear"
+  },
+  "miva_array_collapse": {
+    "body": "miva_array_collapse( ${1:array var} )$0",
+    "prefix": "miva_array_collapse"
+  },
+  "miva_array_copy": {
+    "body": "miva_array_copy( ${1:source var}, ${2:sstart}, ${3:scount}, ${4:dest var}, ${5:dpos} )$0",
+    "prefix": "miva_array_copy"
+  },
+  "miva_array_copy_ref": {
+    "body": "miva_array_copy_ref( ${1:source var}, ${2:sstart}, ${3:scount}, ${4:dest var}, ${5:dpos} )$0",
+    "prefix": "miva_array_copy_ref"
+  },
+  "miva_array_delete": {
+    "body": "miva_array_delete( ${1:array var}, ${2:start}, ${3:count} )$0",
+    "prefix": "miva_array_delete"
+  },
+  "miva_array_deserialize": {
+    "body": "miva_array_deserialize( ${1:string} )$0",
+    "prefix": "miva_array_deserialize"
+  },
+  "miva_array_elements": {
+    "body": "miva_array_elements( ${1:aggregate var} )$0",
+    "prefix": "miva_array_elements"
+  },
+  "miva_array_filter": {
+    "body": "miva_array_filter( ${1:array var}, ${2:offset}, ${3:element var}, ${4:filter_expression}, ${5:output var} )$0",
+    "prefix": "miva_array_filter"
+  },
+  "miva_array_filter_ref": {
+    "body": "miva_array_filter_ref( ${1:array var}, ${2:offset}, ${3:element var}, ${4:filter_expression}, ${5:output var} )$0",
+    "prefix": "miva_array_filter_ref"
+  },
+  "miva_array_find": {
+    "body": "miva_array_find( ${1:needle}, ${2:haystack var}, ${3:offset} )$0",
+    "prefix": "miva_array_find"
+  },
+  "miva_array_insert": {
+    "body": "miva_array_insert( ${1:array var}, ${2:element}, ${3:pos} )$0",
+    "prefix": "miva_array_insert"
+  },
+  "miva_array_insert_ref": {
+    "body": "miva_array_insert_ref( ${1:array var}, ${2:element var}, ${3:pos} )$0",
+    "prefix": "miva_array_insert_ref"
+  },
+  "miva_array_insert_var": {
+    "body": "miva_array_insert_var( ${1:array var}, ${2:element var}, ${3:pos} )$0",
+    "prefix": "miva_array_insert_var"
+  },
+  "miva_array_max": {
+    "body": "miva_array_max( ${1:aggregate var} )$0",
+    "prefix": "miva_array_max"
+  },
+  "miva_array_merge": {
+    "body": "miva_array_merge( ${1:source var}, ${2:sstart}, ${3:scount}, ${4:dest var}, ${5:dpos} )$0",
+    "prefix": "miva_array_merge"
+  },
+  "miva_array_merge_ref": {
+    "body": "miva_array_merge_ref( ${1:source var}, ${2:sstart}, ${3:scount}, ${4:dest var}, ${5:dpos} )$0",
+    "prefix": "miva_array_merge_ref"
+  },
+  "miva_array_min": {
+    "body": "miva_array_min( ${1:aggregate var} )$0",
+    "prefix": "miva_array_min"
+  },
+  "miva_array_next": {
+    "body": "miva_array_next( ${1:aggregate var}, ${2:index} )$0",
+    "prefix": "miva_array_next"
+  },
+  "miva_array_pop": {
+    "body": "miva_array_pop( ${1:array var} )$0",
+    "prefix": "miva_array_pop"
+  },
+  "miva_array_pop_ref": {
+    "body": "miva_array_pop_ref( ${1:array var}, ${2:element var} )$0",
+    "prefix": "miva_array_pop_ref"
+  },
+  "miva_array_previous": {
+    "body": "miva_array_previous( ${1:aggregate var}, ${2:index} )$0",
+    "prefix": "miva_array_previous"
+  },
+  "miva_array_search": {
+    "body": "miva_array_search( ${1:array var}, ${2:offset}, ${3:element var}, ${4:filter_expr} )$0",
+    "prefix": "miva_array_search"
+  },
+  "miva_array_serialize": {
+    "body": "miva_array_serialize( ${1:aggregate var} )$0",
+    "prefix": "miva_array_serialize"
+  },
+  "miva_array_shift": {
+    "body": "miva_array_shift( ${1:array var} )$0",
+    "prefix": "miva_array_shift"
+  },
+  "miva_array_shift_ref": {
+    "body": "miva_array_shift_ref( ${1:array var}, ${2:element var} )$0",
+    "prefix": "miva_array_shift_ref"
+  },
+  "miva_array_sort": {
+    "body": "miva_array_sort( ${1:aggregate var}, ${2:callback}, ${3:data var} )$0",
+    "prefix": "miva_array_sort"
+  },
+  "miva_async_sleep": {
+    "body": "miva_async_sleep( ${1:until}, ${2:semfile}, ${3:semlocation} )$0",
+    "prefix": "miva_async_sleep"
+  },
+  "miva_cdata_encode": {
+    "body": "miva_cdata_encode( ${1:text} )$0",
+    "prefix": "miva_cdata_encode"
+  },
+  "miva_closelog": {
+    "body": "miva_closelog()$0",
+    "prefix": "miva_closelog"
+  },
+  "miva_csv_encode": {
+    "body": "miva_csv_encode( ${1:text}, ${2:delimiter} )$0",
+    "prefix": "miva_csv_encode"
+  },
+  "miva_element_exists": {
+    "body": "miva_element_exists( ${1:array var}, ${2:index} )$0",
+    "prefix": "miva_element_exists"
+  },
+  "miva_getvarlist": {
+    "body": "miva_getvarlist( ${1:scope} )$0",
+    "prefix": "miva_getvarlist"
+  },
+  "miva_hex_decode": {
+    "body": "miva_hex_decode( ${1:data} )$0",
+    "prefix": "miva_hex_decode"
+  },
+  "miva_hex_encode": {
+    "body": "miva_hex_encode( ${1:data} )$0",
+    "prefix": "miva_hex_encode"
+  },
+  "miva_html_strip": {
+    "body": "miva_html_strip( ${1:text}, ${2:allowed_tags} )$0",
+    "prefix": "miva_html_strip"
+  },
+  "miva_ieee754_normalize": {
+    "body": "miva_ieee754_normalize( ${1:significant_digits}, ${2:value} )$0",
+    "prefix": "miva_ieee754_normalize"
+  },
+  "miva_joinstring": {
+    "body": "miva_joinstring( ${1:input var}, ${2:join_with}, ${3:flags} )$0",
+    "prefix": "miva_joinstring"
+  },
+  "miva_json_decode": {
+    "body": "miva_json_decode( ${1:data}, ${2:output var} )$0",
+    "prefix": "miva_json_decode"
+  },
+  "miva_json_decode_last_error": {
+    "body": "miva_json_decode_last_error()$0",
+    "prefix": "miva_json_decode_last_error"
+  },
+  "miva_lockfile": {
+    "body": "miva_lockfile( ${1:path}, ${2:location} )$0",
+    "prefix": "miva_lockfile"
+  },
+  "miva_member_exists": {
+    "body": "miva_member_exists( ${1:structure var}, ${2:member} )$0",
+    "prefix": "miva_member_exists"
+  },
+  "miva_openlog": {
+    "body": "miva_openlog( ${1:ident}, ${2:logopt}, ${3:facility} )$0",
+    "prefix": "miva_openlog"
+  },
+  "miva_output_flush": {
+    "body": "miva_output_flush()$0",
+    "prefix": "miva_output_flush"
+  },
+  "miva_output_header": {
+    "body": "miva_output_header( ${1:header}, ${2:value} )$0",
+    "prefix": "miva_output_header"
+  },
+  "miva_setdefaultdatabase": {
+    "body": "miva_setdefaultdatabase( ${1:database} )$0",
+    "prefix": "miva_setdefaultdatabase"
+  },
+  "miva_setdefaultlanguage": {
+    "body": "miva_setdefaultlanguage( ${1:language} )$0",
+    "prefix": "miva_setdefaultlanguage"
+  },
+  "miva_setlanguage": {
+    "body": "miva_setlanguage( ${1:language} )$0",
+    "prefix": "miva_setlanguage"
+  },
+  "miva_setlogmask": {
+    "body": "miva_setlogmask( ${1:maskpri} )$0",
+    "prefix": "miva_setlogmask"
+  },
+  "miva_setprocessname": {
+    "body": "miva_setprocessname( ${1:name} )$0",
+    "prefix": "miva_setprocessname"
+  },
+  "miva_sleep": {
+    "body": "miva_sleep( ${1:msecs} )$0",
+    "prefix": "miva_sleep"
+  },
+  "miva_splitstring": {
+    "body": "miva_splitstring( ${1:string}, ${2:sep}, ${3:output var}, ${4:flags} )$0",
+    "prefix": "miva_splitstring"
+  },
+  "miva_struct_members": {
+    "body": "miva_struct_members( ${1:aggregate var}, ${2:members var} )$0",
+    "prefix": "miva_struct_members"
+  },
+  "miva_struct_merge": {
+    "body": "miva_struct_merge( ${1:source var}, ${2:dest var} )$0",
+    "prefix": "miva_struct_merge"
+  },
+  "miva_struct_merge_ref": {
+    "body": "miva_struct_merge_ref( ${1:source var}, ${2:dest var} )$0",
+    "prefix": "miva_struct_merge_ref"
+  },
+  "miva_template_compile": {
+    "body": "miva_template_compile( ${1:signat}, ${2:source var}, ${3:sourceitems var}, ${4:target}, ${5:errors var} )$0",
+    "prefix": "miva_template_compile"
+  },
+  "miva_template_compile_dump": {
+    "body": "miva_template_compile_dump( ${1:source var}, ${2:errors var} )$0",
+    "prefix": "miva_template_compile_dump"
+  },
+  "miva_template_compile_itemlist": {
+    "body": "miva_template_compile_itemlist( ${1:signat}, ${2:source var}, ${3:sourceitems var}, ${4:target}, ${5:errors var} )$0",
+    "prefix": "miva_template_compile_itemlist"
+  },
+  "miva_variable_type": {
+    "body": "miva_variable_type( ${1:variable} )$0",
+    "prefix": "miva_variable_type"
+  },
+  "miva_variable_value": {
+    "body": "miva_variable_value( ${1:string} )$0",
+    "prefix": "miva_variable_value"
+  },
+  "miva_writelog": {
+    "body": "miva_writelog( ${1:priority}, ${2:message} )$0",
+    "prefix": "miva_writelog"
+  },
+  "mktime_t": {
+    "body": "mktime_t( ${1:year}, ${2:month}, ${3:dayofmonth}, ${4:hours}, ${5:minutes}, ${6:seconds}, ${7:timezone} )$0",
+    "prefix": "mktime_t"
+  },
+  "padl": {
+    "body": "padl( ${1:string}, ${2:length}, ${3:character} )$0",
+    "prefix": "padl"
+  },
+  "padr": {
+    "body": "padr( ${1:string}, ${2:length}, ${3:character} )$0",
+    "prefix": "padr"
+  },
+  "pkcs7_free": {
+    "body": "pkcs7_free( ${1:pkcs7 var} )$0",
+    "prefix": "pkcs7_free"
+  },
+  "pkcs7_get_certs": {
+    "body": "pkcs7_get_certs( ${1:pkcs7 var}, ${2:x509s var} )$0",
+    "prefix": "pkcs7_get_certs"
+  },
+  "pkcs7_load_mem": {
+    "body": "pkcs7_load_mem( ${1:cert}, ${2:format}, ${3:pkcs7 var} )$0",
+    "prefix": "pkcs7_load_mem"
+  },
+  "pkcs7_verify": {
+    "body": "pkcs7_verify( ${1:pkcs7 var}, ${2:root_x509 var}, ${3:content} )$0",
+    "prefix": "pkcs7_verify"
+  },
+  "power": {
+    "body": "power( ${1:number}, ${2:matissa} )$0",
+    "prefix": "power"
+  },
+  "random": {
+    "body": "random( ${1:max} )$0",
+    "prefix": "random"
+  },
+  "rnd": {
+    "body": "rnd( ${1:value}, ${2:precision} )$0",
+    "prefix": "rnd"
+  },
+  "rsa_free": {
+    "body": "rsa_free( ${1:rsa var} )$0",
+    "prefix": "rsa_free"
+  },
+  "rsa_generate_keypair": {
+    "body": "rsa_generate_keypair( ${1:pubkey_file}, ${2:privkey_file}, ${3:bits}, ${4:e}, ${5:passphrase} )$0",
+    "prefix": "rsa_generate_keypair"
+  },
+  "rsa_generate_keypair_mem": {
+    "body": "rsa_generate_keypair_mem( ${1:pubkey var}, ${2:privkey var}, ${3:bits}, ${4:e}, ${5:passphrase} )$0",
+    "prefix": "rsa_generate_keypair_mem"
+  },
+  "rsa_generate_keypair_mem_cipher": {
+    "body": "rsa_generate_keypair_mem_cipher( ${1:pubkey var}, ${2:privkey var}, ${3:bits}, ${4:e}, ${5:passphrase}, ${6:ciphername} )$0",
+    "prefix": "rsa_generate_keypair_mem_cipher"
+  },
+  "rsa_load_privatekey": {
+    "body": "rsa_load_privatekey( ${1:privkey_file}, ${2:rsa var}, ${3:passphrase} )$0",
+    "prefix": "rsa_load_privatekey"
+  },
+  "rsa_load_privatekey_engine": {
+    "body": "rsa_load_privatekey_engine( ${1:engine}, ${2:key_id}, ${3:rsa var} )$0",
+    "prefix": "rsa_load_privatekey_engine"
+  },
+  "rsa_load_privatekey_mem": {
+    "body": "rsa_load_privatekey_mem( ${1:privkey}, ${2:rsa var}, ${3:passphrase} )$0",
+    "prefix": "rsa_load_privatekey_mem"
+  },
+  "rsa_load_publickey": {
+    "body": "rsa_load_publickey( ${1:pubkey_file}, ${2:rsa var} )$0",
+    "prefix": "rsa_load_publickey"
+  },
+  "rsa_load_publickey_engine": {
+    "body": "rsa_load_publickey_engine( ${1:engine}, ${2:key_id}, ${3:rsa var} )$0",
+    "prefix": "rsa_load_publickey_engine"
+  },
+  "rsa_load_publickey_mem": {
+    "body": "rsa_load_publickey_mem( ${1:pubkey}, ${2:rsa var} )$0",
+    "prefix": "rsa_load_publickey_mem"
+  },
+  "rsa_private_decrypt": {
+    "body": "rsa_private_decrypt( ${1:rsa}, ${2:encrypted}, ${3:plaintext var} )$0",
+    "prefix": "rsa_private_decrypt"
+  },
+  "rsa_private_encrypt": {
+    "body": "rsa_private_encrypt( ${1:rsa}, ${2:plaintext}, ${3:encrypted var} )$0",
+    "prefix": "rsa_private_encrypt"
+  },
+  "rsa_public_decrypt": {
+    "body": "rsa_public_decrypt( ${1:rsa}, ${2:encrypted}, ${3:plaintext var} )$0",
+    "prefix": "rsa_public_decrypt"
+  },
+  "rsa_public_encrypt": {
+    "body": "rsa_public_encrypt( ${1:rsa}, ${2:plaintext}, ${3:encrypted var} )$0",
+    "prefix": "rsa_public_encrypt"
+  },
+  "rsa_save_privatekey": {
+    "body": "rsa_save_privatekey( ${1:privkey_file}, ${2:rsa var}, ${3:passphrase} )$0",
+    "prefix": "rsa_save_privatekey"
+  },
+  "rsa_save_privatekey_mem": {
+    "body": "rsa_save_privatekey_mem( ${1:privkey var}, ${2:rsa var}, ${3:passphrase} )$0",
+    "prefix": "rsa_save_privatekey_mem"
+  },
+  "rsa_save_privatekey_mem_cipher": {
+    "body": "rsa_save_privatekey_mem_cipher( ${1:privkey var}, ${2:rsa var}, ${3:passphrase}, ${4:ciphername} )$0",
+    "prefix": "rsa_save_privatekey_mem_cipher"
+  },
+  "rsa_sign": {
+    "body": "rsa_sign( ${1:rsa}, ${2:buffer}, ${3:signature var} )$0",
+    "prefix": "rsa_sign"
+  },
+  "rsa_verify": {
+    "body": "rsa_verify( ${1:rsa}, ${2:buffer}, ${3:signature} )$0",
+    "prefix": "rsa_verify"
+  },
+  "rtrim": {
+    "body": "rtrim( ${1:string} )$0",
+    "prefix": "rtrim"
+  },
+  "schmod": {
+    "body": "schmod( ${1:path}, ${2:mode} )$0",
+    "prefix": "schmod"
+  },
+  "scopy": {
+    "body": "scopy( ${1:source}, ${2:destination} )$0",
+    "prefix": "scopy"
+  },
+  "sdelete": {
+    "body": "sdelete( ${1:path} )$0",
+    "prefix": "sdelete"
+  },
+  "sexists": {
+    "body": "sexists( ${1:path} )$0",
+    "prefix": "sexists"
+  },
+  "sfrename": {
+    "body": "sfrename( ${1:source}, ${2:destination} )$0",
+    "prefix": "sfrename"
+  },
+  "sfsymlink": {
+    "body": "sfsymlink( ${1:source}, ${2:destination} )$0",
+    "prefix": "sfsymlink"
+  },
+  "sin": {
+    "body": "sin( ${1:number} )$0",
+    "prefix": "sin"
+  },
+  "sinh": {
+    "body": "sinh( ${1:number} )$0",
+    "prefix": "sinh"
+  },
+  "sisdir": {
+    "body": "sisdir( ${1:path} )$0",
+    "prefix": "sisdir"
+  },
+  "slugify": {
+    "body": "slugify( ${1:data} )$0",
+    "prefix": "slugify"
+  },
+  "smkdir": {
+    "body": "smkdir( ${1:path} )$0",
+    "prefix": "smkdir"
+  },
+  "smode": {
+    "body": "smode( ${1:path} )$0",
+    "prefix": "smode"
+  },
+  "sqrt": {
+    "body": "sqrt( ${1:number} )$0",
+    "prefix": "sqrt"
+  },
+  "srandom": {
+    "body": "srandom( ${1:seed} )$0",
+    "prefix": "srandom"
+  },
+  "srename": {
+    "body": "srename( ${1:source}, ${2:destination} )$0",
+    "prefix": "srename"
+  },
+  "ssize": {
+    "body": "ssize( ${1:path} )$0",
+    "prefix": "ssize"
+  },
+  "ssymlink": {
+    "body": "ssymlink( ${1:source}, ${2:destination} )$0",
+    "prefix": "ssymlink"
+  },
+  "stime": {
+    "body": "stime( ${1:path} )$0",
+    "prefix": "stime"
+  },
+  "substring": {
+    "body": "substring( ${1:string}, ${2:position}, ${3:length} )$0",
+    "prefix": "substring"
+  },
+  "substring_var": {
+    "body": "substring_var( ${1:string var}, ${2:position}, ${3:length} )$0",
+    "prefix": "substring_var"
+  },
+  "tan": {
+    "body": "tan( ${1:number} )$0",
+    "prefix": "tan"
+  },
+  "tanh": {
+    "body": "tanh( ${1:number} )$0",
+    "prefix": "tanh"
+  },
+  "tar_create": {
+    "body": "tar_create( ${1:file}, ${2:file_loc}, ${3:dir}, ${4:dir_loc}, ${5:flags} )$0",
+    "prefix": "tar_create"
+  },
+  "tar_directory": {
+    "body": "tar_directory( ${1:file}, ${2:location}, ${3:desc var} )$0",
+    "prefix": "tar_directory"
+  },
+  "tar_extract": {
+    "body": "tar_extract( ${1:file}, ${2:file_loc}, ${3:dir}, ${4:dir_loc} )$0",
+    "prefix": "tar_extract"
+  },
+  "time_t_dayofmonth": {
+    "body": "time_t_dayofmonth( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_dayofmonth"
+  },
+  "time_t_dayofweek": {
+    "body": "time_t_dayofweek( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_dayofweek"
+  },
+  "time_t_dayofyear": {
+    "body": "time_t_dayofyear( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_dayofyear"
+  },
+  "time_t_hour": {
+    "body": "time_t_hour( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_hour"
+  },
+  "time_t_min": {
+    "body": "time_t_min( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_min"
+  },
+  "time_t_month": {
+    "body": "time_t_month( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_month"
+  },
+  "time_t_sec": {
+    "body": "time_t_sec( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_sec"
+  },
+  "time_t_year": {
+    "body": "time_t_year( ${1:timet}, ${2:time_zone} )$0",
+    "prefix": "time_t_year"
+  },
+  "timezone": {
+    "body": "timezone()$0",
+    "prefix": "timezone"
+  },
+  "tokenize": {
+    "body": "tokenize( ${1:string}, ${2:variables} )$0",
+    "prefix": "tokenize"
+  },
+  "tolower": {
+    "body": "tolower( ${1:string} )$0",
+    "prefix": "tolower"
+  },
+  "toupper": {
+    "body": "toupper( ${1:string} )$0",
+    "prefix": "toupper"
+  },
+  "trim": {
+    "body": "trim( ${1:string} )$0",
+    "prefix": "trim"
+  },
+  "wdownload": {
+    "body": "wdownload( ${1:url}, ${2:filepath}, ${3:location}, ${4:callback}, ${5:callbackdata var} )$0",
+    "prefix": "wdownload"
+  },
+  "wget": {
+    "body": "wget( ${1:url}, ${2:filepath}, ${3:location} )$0",
+    "prefix": "wget"
+  },
+  "x509_create": {
+    "body": "x509_create( ${1:cert}, ${2:x509 var} )$0",
+    "prefix": "x509_create"
+  },
+  "x509_digest": {
+    "body": "x509_digest( ${1:x509 var}, ${2:digestname}, ${3:digest var} )$0",
+    "prefix": "x509_digest"
+  },
+  "x509_free": {
+    "body": "x509_free( ${1:rsa var} )$0",
+    "prefix": "x509_free"
+  },
+  "x509_get_extensions": {
+    "body": "x509_get_extensions( ${1:certref var}, ${2:extensions var} )$0",
+    "prefix": "x509_get_extensions"
+  },
+  "x509_get_issuer_name": {
+    "body": "x509_get_issuer_name( ${1:certref var}, ${2:issuername var} )$0",
+    "prefix": "x509_get_issuer_name"
+  },
+  "x509_get_subject_name": {
+    "body": "x509_get_subject_name( ${1:certref var}, ${2:subjectname var} )$0",
+    "prefix": "x509_get_subject_name"
+  },
+  "x509_load": {
+    "body": "x509_load( ${1:cert}, ${2:x509 var} )$0",
+    "prefix": "x509_load"
+  },
+  "x509_load_mem": {
+    "body": "x509_load_mem( ${1:cert}, ${2:x509 var} )$0",
+    "prefix": "x509_load_mem"
+  },
+  "x509_pubkey_digest": {
+    "body": "x509_pubkey_digest( ${1:x509 var}, ${2:digestname}, ${3:digest var} )$0",
+    "prefix": "x509_pubkey_digest"
+  },
+  "x509_rsa_publickey": {
+    "body": "x509_rsa_publickey( ${1:x509 var}, ${2:rsa var} )$0",
+    "prefix": "x509_rsa_publickey"
+  },
+  "x509_verify": {
+    "body": "x509_verify( ${1:x509 var}, ${2:trusted_certs} )$0",
+    "prefix": "x509_verify"
+  },
+  "xml_parse": {
+    "body": "xml_parse( ${1:filepath}, ${2:location}, ${3:output var} )$0",
+    "prefix": "xml_parse"
+  },
+  "xml_parse_error": {
+    "body": "xml_parse_error( ${1:lineno var}, ${2:error var} )$0",
+    "prefix": "xml_parse_error"
+  },
+  "xml_parse_section": {
+    "body": "xml_parse_section( ${1:output var}, ${2:eof var} )$0",
+    "prefix": "xml_parse_section"
+  },
+  "xml_parse_section_getstate": {
+    "body": "xml_parse_section_getstate( ${1:target var} )$0",
+    "prefix": "xml_parse_section_getstate"
+  },
+  "xml_parse_section_init": {
+    "body": "xml_parse_section_init( ${1:filepath}, ${2:location}, ${3:level} )$0",
+    "prefix": "xml_parse_section_init"
+  },
+  "xml_parse_section_setstate": {
+    "body": "xml_parse_section_setstate( ${1:source var} )$0",
+    "prefix": "xml_parse_section_setstate"
+  },
+  "xml_parse_set_colon_replacement": {
+    "body": "xml_parse_set_colon_replacement( ${1:colon} )$0",
+    "prefix": "xml_parse_set_colon_replacement"
+  },
+  "xml_parse_var": {
+    "body": "xml_parse_var( ${1:var var}, ${2:output var} )$0",
+    "prefix": "xml_parse_var"
+  }
+}

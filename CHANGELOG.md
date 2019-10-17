@@ -2,6 +2,11 @@
 
 All notable changes to the "Miva MVT Syntax and Snippets" extension will be documented in this file.
 
+### 1.3.2
+
+- Added mvt functions support
+- Updated readme file
+
 ### 1.3.1
 
 - Updated extension name

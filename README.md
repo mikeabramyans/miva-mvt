@@ -1,4 +1,4 @@
-# Miva MVT Syntax and Snippets README
+# Miva Syntax and Snippets README
 
 Extension for Miva Script & Template Language
 
