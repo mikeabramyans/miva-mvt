@@ -6,6 +6,7 @@ All notable changes to the "Miva MVT Syntax and Snippets" extension will be docu
 
 - Added mvt functions support
 - Updated readme file
+- Fixed mv comment tag
 
 ### 1.3.1
 
