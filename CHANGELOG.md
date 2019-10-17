@@ -1,6 +1,11 @@
 # Change Log
 
-All notable changes to the "Miva MVT Syntax and Snippets" extension will be documented in this file.
+All notable changes to the "Miva Syntax and Snippets" extension will be documented in this file.
+
+### 1.3.3
+
+- Updated mvt snippets
+- Added tons of new mvt snippets
 
 ### 1.3.2
 

@@ -1,0 +1,132 @@
+{
+  "mvt:read_basket": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Basket( '${1:basket_field_code}', ${2:g.variable} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_basket"
+  },
+  "mvt:write_basket": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Basket( '${1:basket_field_code}', '${2:value}' )\" />$0",
+    "description": ["Customfield", "Debug"],
+    "prefix": "mvt:write_basket"
+  },
+  "mvt:read_category_code": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Category_Code( ${1:'category_code'}, '${2:custom_field_code}', ${4:l.settings:${3:category}:customfield_values:customfields:$2} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_category_code"
+  },
+  "mvt:read_category_id": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Category_ID( ${1:1}, '${2:custom_field_code}', ${4:l.settings:${3:category}:customfield_values:customfields:$2} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_category_id"
+  },
+  "mvt:read_customer_id": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Customer_ID( ${1:666}, '${2:custom_field_code}', ${3:l.settings:customfields} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_customer_id"
+  },
+  "mvt:read_customer_login": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Customer_Login( ${1:'test@test.com'}, '${2:custom_field_code}', ${3:l.settings:customfields} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_customer_login"
+  },
+  "mvt:read_order": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Order( ${1:666}, '${2:custom_field_code}', ${3:l.settings:customfields} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_order"
+  },
+  "mvt:read_product_code": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Product_Code( ${1:'product_code'}, '${2:custom_field_code}', ${4:l.settings:${3:product}:customfield_values:customfields:$2} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_product_code"
+  },
+  "mvt:read_product_id": {
+    "body": "<mvt:item name=\"customfields\" param=\"Read_Product_ID( ${1:1}, '${2:custom_field_code}', ${4:l.settings:${3:product}:customfield_values:customfields:$2} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:read_product_id"
+  },
+  "mvt:write_category_code": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Category_Code( ${1:'category_code'}, '${2:custom_field_code}', ${3:'value'} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:write_category_code"
+  },
+  "mvt:write_category_id": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Category_ID( ${1:1}, '${2:custom_field_code}', ${3:'value'} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:write_category_id"
+  },
+  "mvt:write_customer_id": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Customer_ID( ${1:666}, '${2:custom_field_code}', ${3:'value'} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:write_customer_id"
+  },
+  "mvt:write_customer_login": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Customer_Login( ${1:'test@test.com'}, '${2:custom_field_code}', ${3:'value'} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:write_customer_login"
+  },
+  "mvt:write_order": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Order( ${1:g.order:id}, '${2:custom_field_code}', ${3:'value'} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:write_order"
+  },
+  "mvt:write_product_code": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Product_Code( ${1:'product_code'}, '${2:custom_field_code}', ${3:'value'} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:write_product_code"
+  },
+  "mvt:write_product_id": {
+    "body": "<mvt:item name=\"customfields\" param=\"Write_Product_ID( ${1:g.product:id}, '${2:custom_field_code}', ${3:'value'} )\" />$0",
+    "description": "Customfield",
+    "prefix": "mvt:write_product_id"
+  },
+  "mvt:cf-debug": {
+    "body": "<mvt:item name=\"customfields\" param=\"Debug()\" />$0",
+    "description": "Debug",
+    "prefix": "mvt:cf-debug"
+  },
+  "mvt:debug": {
+    "body": "<mvt:assign name=\"g.mvt_debug\" value=\"glosub( miva_array_serialize( ${1:variable} ), ',', asciichar( 10 ) )\" />\n${2:<!--\n@@${1/(l\\.(settings:?)?|g\\.|s\\.)([a-zA-Z0-9:_\\.\\[\\]]*)/$3/g}\n===${1/./=/g}}\n&mvt:global:mvt_debug;\n${3:-->}$0",
+    "description": "Debug",
+    "prefix": "mvt:debug"
+  },
+  "mvt:testuser": {
+    "body": "<mvt:comment> Start Testing Conditional </mvt:comment>\n<mvt:if expr=\"g.customer:login EQ '${1:test}'\">\n\n\n\n\n${2}\n\n\n\n\n${3:<mvt:else>}\n${0}\n</mvt:if>\n<mvt:comment> / end Testing Conditional </mvt:comment>$0",
+    "description": "Debug",
+    "prefix": "mvt:testuser"
+  },
+  "mvt:testvar": {
+    "body": "<mvt:comment> Start Testing Conditional </mvt:comment>\n<mvt:if expr=\"${1:g.test EQ 1}\">\n\n\n\n\n${2}\n\n\n\n\n${3:<mvt:else>}\n${0}\n</mvt:if>\n<mvt:comment> / end Testing Conditional </mvt:comment>$0",
+    "description": "Debug",
+    "prefix": "mvt:testvar"
+  },
+  "mvt:var_dump": {
+    "body": "<mvt:assign name=\"g.var\" value=\"miva_array_serialize(${1:array})\" />\n<!-- @@ &mvt:global:var; -->$0",
+    "description": "Debug",
+    "prefix": "mvt:var_dump"
+  },
+  "mvt:concat": {
+    "body": "<mvt:assign name=\"${1:g.variable}\" value=\"${1:g.variable} ${2:\\$} ${3:l.variable}\" />$0",
+    "description": "Other",
+    "prefix": "mvt:concat"
+  },
+  "mvt:fileread": {
+    "body": "<mvt:assign name=\"g.file_read\" value=\"file_read('/credit.csv','data', g.data)\" />\n\n  <mvt:if expr=\" g.file_read NE -1 \">\n    The file was read!\n  <mvt:else>\n    There was an error reading the file\n  </mvt:if>\n \n  <mvt:assign name=\"g.counter\" value=\"1\" />\n  <mvt:assign name=\"l.settings:line\" value=\"gettoken( g.data, asciichar(10), g.counter )\" />\n\n  <mvt:while expr=\"NOT ISNULL l.settings:line\">\n \n      <mvt:if expr=\"'bheyde' CIN l.settings:line\">\n\n      <mvt:assign name=\"l.settings:credit:login\"  value=\"gettoken( l.settings:line, asciichar(44), 1 ) \" />\n      <mvt:assign name=\"l.settings:credit:name\"   value=\"gettoken( l.settings:line, asciichar(44), 2 ) \" />\n      <mvt:assign name=\"l.settings:credit:amount\" value=\"gettoken( l.settings:line, asciichar(44), 3 ) \" />\n      \n      Login:  &mvt:credit:login;<br>\n      Name:   &mvt:credit:name;<br>\n      amount: &mvt:credit:amount;<br>\n  \n \n    </mvt:if>\n \n     \n      <mvt:assign name=\"g.counter\" value=\"g.counter + 1\" />\n      <mvt:assign name=\"l.settings:line\" value=\"gettoken( g.data, asciichar(10), g.counter )\" />\n \n               \n  </mvt:while>$0",
+    "description": "Other",
+    "prefix": "mvt:fileread"
+  },
+  "mvt:filewrite": {
+    "body": "<mvt:assign name=\"g.filename\" \tvalue=\"'Export.csv'\" />\n<mvt:assign name=\"g.filepath\" \tvalue=\"'/test/'\" />\n<mvt:assign name=\"g.newline\" \tvalue=\"asciichar(10)\" />\n\n<mvt:assign name=\"g.headerrow\" \tvalue=\"'Product_Code,Product_Name,Product_Price' $ g.new_line\" />\n\n<mvt:assign name=\"g.file_exists\" value=\"sexists(g.filepath $ g.filename)\" />\n\n<mvt:if expr=\"g.file_exists EQ 1\">\n\n\t<mvt:assign name=\"g.file_deleted\" value=\"sdelete(g.filepath $ g.filename)\" />\n\n\t<mvt:if expr=\"g.file_deleted EQ 1\">\n\t\t<mvt:assign name=\"g.file_created\" value=\"file_create(g.filepath $ g.filename,'script', g.headerrow)\" />\n\t</mvt:if>\n\n<mvt:else>\n\n\t<mvt:assign name=\"g.file_created\" value=\"file_create(g.filepath $ g.filename,'script', g.headerrow)\" />\n\n</mvt:if>\n\n\n<mvt:if expr=\"g.file_deleted EQ 1\">\n\tThe File Was Deleted <br>\n</mvt:if>\n\n<mvt:if expr=\"g.file_created NE -1\">\n\tThe File Was Created <br>\n<mvt:else>\n\tThere was an error <br>\n</mvt:if>$0",
+    "description": "Other",
+    "prefix": "mvt:filewrite"
+  },
+  "mvt:gettoken": {
+    "body": "<mvt:assign name=\"${1:g.first}\" value=\"gettoken(${2:g.list}, ${3:','} , ${4:1})\" />$0",
+    "description": "Other",
+    "prefix": "mvt:gettoken"
+  },
+  "mvt:glosub": {
+    "body": "<mvt:assign name=\"g.new_string\" value=\"glosub(${1:g.string}, ${2:'Miva Merchant'} , ${3:'Miva'})\" />$0",
+    "description": "Other",
+    "prefix": "mvt:glosub"
+  }
+}

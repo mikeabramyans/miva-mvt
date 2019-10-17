@@ -1,0 +1,102 @@
+{
+  "mvt:assign": {
+    "body": "<mvt:assign name=\"${1:g.variable}\" value=\"${2:l.value}\" />$0",
+    "description": "Tag - Assign",
+    "prefix": "mvt:assign"
+  },
+  "mvt:call": {
+    "body": "<mvt:call action=\"$1\" method=\"$2\">\n\t${3:<mvt:eval expr=\"s.callvalue\" />}\n</mvt:call>\n<!-- @@ &mvt:global:MvCALL_Error; -->$0",
+    "description": "Tag - Call",
+    "prefix": "mvt:call"
+  },
+  "mvt:callcontinue": {
+    "body": "<mvt:callcontinue />$0",
+    "description": "Tag - CallContinue",
+    "prefix": "mvt:callcontinue"
+  },
+  "mvt:callstop": {
+    "body": "<mvt:callstop />$0",
+    "description": "Tag - CallStop",
+    "prefix": "mvt:callstop"
+  },
+  "mvt:capture": {
+    "body": "<mvt:capture variable=\"${1}\">\n\t${0}\n</mvt:capture>$0",
+    "description": "Tag - Capture",
+    "prefix": "mvt:capture"
+  },
+  "mvt:comment": {
+    "body": "<mvt:comment>${1}</mvt:comment>$0",
+    "description": "Tag - Comment",
+    "prefix": "mvt:comment"
+  },
+  "mvt:do": {
+    "body": "<mvt:do file=\"$4\" ${2:name=\"${3:l.success}\"} value=\"$1\" />$0",
+    "description": "Tag - Do",
+    "prefix": "mvt:do"
+  },
+  "mvt:else": {
+    "body": "<mvt:if expr=\"${1}\">\n\t${2}\n<mvt:else>\n\t${0}\n</mvt:if>$0",
+    "description": "Tag - Else",
+    "prefix": "mvt:else"
+  },
+  "mvt:elseif": {
+    "body": "<mvt:if expr=\"${1}\">\n\t${2}\n<mvt:elseif expr=\"${3}\">\n\t${0}\n</mvt:if>$0",
+    "description": "Tag - ElseIf",
+    "prefix": "mvt:elseif"
+  },
+  "mvt:exit": {
+    "body": "<mvt:exit />$0",
+    "description": "Tag - Exit",
+    "prefix": "mvt:exit"
+  },
+  "mvt:foreach": {
+    "body": "<mvt:foreach iterator=\"${1}\" array=\"${2}\">\n\t${0}\n</mvt:foreach>$0",
+    "description": "Tag - Foreach",
+    "prefix": "mvt:foreach"
+  },
+  "mvt:foreachcontinue": {
+    "body": "<mvt:foreachcontinue />$0",
+    "description": "Tag - ForeachContinue",
+    "prefix": "mvt:foreachcontinue"
+  },
+  "mvt:foreachstop": {
+    "body": "<mvt:foreachstop />$0",
+    "description": "Tag - ForeachStop",
+    "prefix": "mvt:foreachstop"
+  },
+  "mvt:if": {
+    "body": "<mvt:if expr=\"${1}\">\n\t${0}\n</mvt:if>$0",
+    "description": "Tag - If",
+    "prefix": "mvt:if"
+  },
+  "mvt:item": {
+    "body": "<mvt:item name=\"${1}\" ${2:param=\"${3}\"} />$0",
+    "description": "Tag - Item",
+    "prefix": "mvt:item"
+  },
+  "mvt:miva": {
+    "body": "<mvt:miva output=\"${1:on}\" compresswhitespace=\"${2:on}\" />$0",
+    "description": "Tag - Miva",
+    "prefix": "mvt:miva"
+  },
+  "mvt:while": {
+    "body": "<mvt:while expr=\"${1}\">\n\t${0}\n</mvt:while>$0",
+    "description": "Tag - While",
+    "prefix": "mvt:while"
+  },
+  "mvt:whilecontinue": {
+    "body": "<mvt:whilecontinue />$0",
+    "description": "Tag - WhileContinue",
+    "prefix": "mvt:whilecontinue"
+  },
+  "mvt:whilestop": {
+    "body": "<mvt:whilestop />$0",
+    "description": "Tag - WhileStop",
+    "prefix": "mvt:whilestop"
+  },
+  "mvt:eval": {
+    "body": "<mvt:eval expr=\"${1:g.value}\" />$0",
+    "description": "Tag - Eval",
+    "prefix": "mvt:eval"
+  }
+}
