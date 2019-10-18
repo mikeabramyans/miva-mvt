@@ -29,7 +29,7 @@
           "name": "comment.block.mvt"
         },
         {
-          "begin": "(</?)(?i:(mvt)(:)(item|assign|if|elseif|while|eval|foreach|else|do|call|callcontinue|callstop|foreachcontinue|foreachstop|whilecontinue|whilestop|exit|miva)\\b)",
+          "begin": "(</?)(?i:(mvt)(:)(item|assign|if|elseif|while|eval|foreach|else|do|call|callcontinue|callstop|foreachcontinue|foreachstop|whilecontinue|whilestop|exit|miva|capture)\\b)",
           "beginCaptures": {
             "1": {
               "name": "punctuation.definition.tag.begin.mvt meta.preprocessor.begin.mvt"
