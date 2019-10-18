@@ -2,11 +2,15 @@
 
 All notable changes to the "Miva Syntax and Snippets" extension will be documented in this file.
 
-### 1.3.3
+### 1.3.4
 
 - Updated current mvt snippets
 - Added tons of new mvt snippets (exp. toolkit)
 - Fixed mvt:capture highlighting
+
+### 1.3.3
+
+- Bug fix
 
 ### 1.3.2
 
