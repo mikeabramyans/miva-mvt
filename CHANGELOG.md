@@ -4,7 +4,7 @@ All notable changes to the "Miva Syntax and Snippets" extension will be document
 
 ### 1.3.3
 
-- Updated mvt snippets
+- Updated current mvt snippets
 - Added tons of new mvt snippets
 
 ### 1.3.2
